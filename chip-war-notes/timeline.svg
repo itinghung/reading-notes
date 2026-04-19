@@ -1,0 +1,53 @@
+<svg width="100%" height="auto" viewBox="0 0 1000 280" style="max-width: 1000px;" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="tlg" x1="0%" x2="100%"><stop offset="0%" stop-color="#1d4ed8" stop-opacity=".5"/><stop offset="100%" stop-color="#dc2626" stop-opacity=".7"/></linearGradient></defs>
+  <rect x="20" y="136" width="960" height="4" fill="url(#tlg)" rx="2"/>
+  
+  <rect x="20"  y="122" width="150" height="32" fill="#1d4ed812" stroke="#1d4ed828" stroke-width="1" rx="6"/>
+  <text x="95"  y="143" fill="#93c5fd" font-size="14" text-anchor="middle" font-weight="600">1950s 冷戰啟動</text>
+  
+  <rect x="180" y="122" width="160" height="32" fill="#94a3b812" stroke="#94a3b828" stroke-width="1" rx="6"/>
+  <text x="260" y="143" fill="#94a3b8" font-size="14" text-anchor="middle" font-weight="600">1960–70s 民用爆發</text>
+  
+  <rect x="350" y="122" width="150" height="32" fill="#fb923c12" stroke="#fb923c28" stroke-width="1" rx="6"/>
+  <text x="425" y="143" fill="#fb923c" font-size="14" text-anchor="middle" font-weight="600">1980s 日本崛起</text>
+  
+  <rect x="510" y="122" width="150" height="32" fill="#1d4ed812" stroke="#1d4ed828" stroke-width="1" rx="6"/>
+  <text x="585" y="143" fill="#93c5fd" font-size="14" text-anchor="middle" font-weight="600">1990s 美國復興</text>
+  
+  <rect x="670" y="122" width="140" height="32" fill="#b4530812" stroke="#b4530828" stroke-width="1" rx="6"/>
+  <text x="740" y="143" fill="#fde68a" font-size="14" text-anchor="middle" font-weight="600">2000s 韓/台崛起</text>
+  
+  <rect x="820" y="122" width="140" height="32" fill="#dc262612" stroke="#dc262628" stroke-width="1" rx="6"/>
+  <text x="890" y="143" fill="#fca5a5" font-size="14" text-anchor="middle" font-weight="600">2010s+ 中美博弈</text>
+
+  <circle cx="60"  cy="114" r="6" fill="#93c5fd"/><line x1="60" y1="108" x2="60" y2="70" stroke="#93c5fd" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="60" y="60" fill="#93c5fd" font-size="14" text-anchor="middle" font-weight="600">快捷半導體</text>
+  <text x="60" y="42" fill="#4e86aa" font-size="13" text-anchor="middle">降價搶民用</text>
+
+  <circle cx="230" cy="114" r="6" fill="#94a3b8"/><line x1="230" y1="108" x2="230" y2="70" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="230" y="60" fill="#94a3b8" font-size="14" text-anchor="middle" font-weight="600">越戰</text>
+  <text x="230" y="42" fill="#4e86aa" font-size="13" text-anchor="middle">軍事應用擴大</text>
+
+  <circle cx="380" cy="114" r="6" fill="#fb923c"/><line x1="380" y1="108" x2="380" y2="70" stroke="#fb923c" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="380" y="60" fill="#fb923c" font-size="14" text-anchor="middle" font-weight="600">日本 DRAM</text>
+  <text x="380" y="42" fill="#4e86aa" font-size="13" text-anchor="middle">超越美國</text>
+
+  <circle cx="560" cy="114" r="6" fill="#93c5fd"/><line x1="560" y1="108" x2="560" y2="70" stroke="#93c5fd" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="560" y="60" fill="#93c5fd" font-size="14" text-anchor="middle" font-weight="600">Intel 轉型</text>
+  <text x="560" y="42" fill="#4e86aa" font-size="13" text-anchor="middle">DRAM→微處理器</text>
+
+  <circle cx="610" cy="114" r="6" fill="#fb923c"/><line x1="610" y1="108" x2="610" y2="85" stroke="#fb923c" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="610" y="76" fill="#fb923c" font-size="13" text-anchor="middle">日本泡沫破裂</text>
+
+  <circle cx="690" cy="154" r="6" fill="#f8c46a"/><line x1="690" y1="160" x2="690" y2="200" stroke="#f8c46a" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="690" y="218" fill="#fde68a" font-size="14" text-anchor="middle" font-weight="600">TSMC 代工模式</text>
+  <text x="690" y="236" fill="#4e86aa" font-size="13" text-anchor="middle">打敗 Intel 整合</text>
+
+  <circle cx="820" cy="154" r="6" fill="#a78bfa"/><line x1="820" y1="160" x2="820" y2="200" stroke="#a78bfa" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="820" y="218" fill="#c4b5fd" font-size="14" text-anchor="middle" font-weight="600">ASML EUV</text>
+  <text x="820" y="236" fill="#4e86aa" font-size="13" text-anchor="middle">供應鏈護城河</text>
+
+  <circle cx="940" cy="154" r="6" fill="#f08080"/><line x1="940" y1="160" x2="940" y2="200" stroke="#f08080" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="940" y="218" fill="#fca5a5" font-size="14" text-anchor="middle" font-weight="600">晶片出口管制</text>
+  <text x="940" y="236" fill="#4e86aa" font-size="13" text-anchor="middle">中美全面博弈</text>
+</svg>

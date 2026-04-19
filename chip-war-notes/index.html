@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>晶片戰爭 — 閱讀筆記</title>
+<link rel="stylesheet" href="../notes.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-eyebrow">Reading Notes</div>
+  <h1>晶片戰爭</h1>
+  <p class="hero-sub">從冷戰啟動到中美科技對峙，矽時代的地緣政治與產業演化</p>
+  <div class="hero-tags">
+    <span class="hero-tag">Chris Miller 著</span>
+    <span class="hero-tag">8部 + 序</span>
+  </div>
+  <div class="hero-tags" style="margin-top:8px">
+    <span class="hash-tag">半導體產業史</span>
+    <span class="hash-tag">地緣政治</span>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="../" style="margin-right:12px;flex-shrink:0">← 書單</a>
+  <a href="#" class="nav-brand">晶片戰爭</a>
+  <a href="#overview">總覽</a>
+  <a href="#timeline">歷史脈絡</a>
+  <a href="#countries">各國發展</a>
+  <a href="#asia-bg">亞洲崛起</a>
+  <a href="#divide">亞洲 vs. 蘇聯</a>
+  <a href="#uschina">中美博弈</a>
+  <a href="#companies">公司故事</a>
+</nav>
+
+<!-- ① OVERVIEW -->
+<section id="overview"><div class="si">
+  <div class="insight"><p>掌握技術，代表掌握對未來的想像；半導體不只建構了歷史，也將塑造未來。</p></div>
+  <div style="text-align:center;margin-bottom:18px"><span class="annotation">成功為失敗之母——日本、美國製造業，都在稱霸一個時代後，錯失了對新趨勢的掌握。</span></div>
+  <h2>總覽 <span class="tag">序 + 前言 + 結語</span></h2>
+  <div class="grid">
+    <div class="card" style="grid-column:1/-1">
+      <div class="card-title">掌握勢力的資源隨時代演變</div>
+      <div style="display:grid;grid-template-columns:1fr 18px 1fr 18px 1fr;align-items:center;margin-top:10px;gap:0">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 8px;text-align:center">
+          <div style="font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-bottom:8px">二戰：工業生產力</div>
+          <div style="font-size:24px;color:var(--muted2);line-height:1;margin-bottom:8px">⚙&#xFE0E;</div>
+          <div style="font-size:12px;font-weight:600;color:var(--muted2)">鋼鐵與鋁</div>
+        </div>
+        <div style="text-align:center;color:var(--muted2);font-size:20px;font-weight:300">→</div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 8px;text-align:center">
+          <div style="font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-bottom:8px">冷戰：核武優勢</div>
+          <div style="font-size:24px;color:var(--muted2);line-height:1;margin-bottom:8px">☢&#xFE0E;</div>
+          <div style="font-size:12px;font-weight:600;color:var(--muted2)">原子武器</div>
+        </div>
+        <div style="text-align:center;color:var(--accent);font-size:20px;font-weight:300">→</div>
+        <div style="background:#1b496530;border:1px solid var(--accent);border-radius:8px;padding:14px 8px;text-align:center">
+          <div style="font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--accent);text-transform:uppercase;margin-bottom:8px">現今：晶片決定勝負</div>
+          <div style="font-size:24px;color:var(--accent);line-height:1;margin-bottom:8px">◈</div>
+          <div style="font-size:12px;font-weight:700;color:var(--mint)">運算力</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">低階 vs. 高階晶片利潤邏輯</div>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 14px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+            <span style="font-size:12px;font-weight:700;color:var(--muted2)">低階晶片</span>
+            <span style="font-size:10px;background:var(--surface);color:var(--muted2);padding:2px 7px;border-radius:4px">成熟製程</span>
+          </div>
+          <div style="height:5px;background:var(--border);border-radius:3px;margin-bottom:9px">
+            <div style="height:100%;width:42%;background:var(--muted2);border-radius:3px;opacity:.6"></div>
+          </div>
+          <ul style="padding-left:14px;margin:0">
+            <li style="font-size:11px;color:var(--muted2);margin-bottom:3px">折舊完畢後 <strong style="color:var(--text)">利潤提升</strong></li>
+            <li style="font-size:11px;color:var(--muted2)">受中國補貼直接衝擊</li>
+            <li style="font-size:11px;color:var(--muted2);margin-top:4px">未來 → 升級漸緩的<strong style="color:var(--text)">通用處理器</strong>，一般消費市場</li>
+          </ul>
+        </div>
+        <div style="background:#1b496528;border:1px solid var(--accent);border-radius:8px;padding:12px 14px">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+            <span style="font-size:12px;font-weight:700;color:var(--mint)">高階晶片</span>
+            <span style="font-size:10px;background:#1b496550;color:var(--accent);padding:2px 7px;border-radius:4px">先進製程</span>
+          </div>
+          <div style="height:5px;background:var(--border);border-radius:3px;margin-bottom:9px">
+            <div style="height:100%;width:72%;background:var(--accent);border-radius:3px"></div>
+          </div>
+          <ul style="padding-left:14px;margin:0">
+            <li style="font-size:11px;color:var(--muted2);margin-bottom:3px">TSMC 營收 <strong style="color:var(--text)">&gt;50%</strong> 來自高階</li>
+            <li style="font-size:11px;color:var(--muted2)">中國補貼影響相對有限</li>
+            <li style="font-size:11px;color:var(--muted2);margin-top:4px">未來 → 強大<strong style="color:var(--text)">訂製 AI 晶片</strong>，專為特定任務最佳化</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">技術應用路徑</div>
+      <div style="display: flex; flex-direction: column; margin-top: 10px; padding-left: 4px;">
+        <!-- Step 1 -->
+        <div style="display: flex; gap: 14px;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 26px; height: 26px; border-radius: 50%; background: var(--surface); border: 1.5px solid var(--accent); display: flex; align-items: center; justify-content: center; font-size: 13px; z-index: 1;"><span class="em">🧪</span></div>
+            <div style="width: 2px; height: 24px; background: linear-gradient(to bottom, var(--accent), var(--border)); margin: -2px 0;"></div>
+          </div>
+          <div style="padding-bottom: 16px; padding-top: 2px;">
+            <div style="font-size: 12px; font-weight: 700; color: var(--text);">發現 / 發明</div>
+            <div style="font-size: 11px; color: var(--muted); margin-top: 1px;">基礎科學突破與實驗室原型</div>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div style="display: flex; gap: 14px;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 26px; height: 26px; border-radius: 50%; background: var(--surface); border: 1.5px solid var(--accent); display: flex; align-items: center; justify-content: center; font-size: 13px; z-index: 1;"><span class="em">🎖️</span></div>
+            <div style="width: 2px; height: 24px; background: linear-gradient(to bottom, var(--accent), var(--mint)); opacity: 0.6; margin: -2px 0;"></div>
+          </div>
+          <div style="padding-bottom: 16px; padding-top: 2px;">
+            <div style="font-size: 12px; font-weight: 700; color: var(--text);">軍用市場先行</div>
+            <div style="font-size: 11px; color: var(--muted); margin-top: 1px;">國家資助，針對極限效能應用</div>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div style="display: flex; gap: 14px;">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 13px; z-index: 1; box-shadow: 0 0 10px rgba(98, 182, 203, 0.3);"><span class="em">🚀</span></div>
+          </div>
+          <div style="padding-top: 2px;">
+            <div style="font-size: 12px; font-weight: 700; color: var(--mint);">民用大眾市場爆發</div>
+            <div style="font-size: 11px; color: var(--muted2); margin-top: 1px;">良率提升與規模化，價格劇降</div>
+            <a href="#companies" onclick="event.preventDefault();document.getElementById('companies').scrollIntoView({behavior:'smooth'})" style="font-size:11px;color:var(--accent);text-decoration:none;display:inline-block;margin-top:5px" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">↗ 快捷半導體：降價策略快速吃下民用市場</a>
+          </div>
+        </div>
+      </div>
+      <div class="callout" style="margin-top: 16px;">通訊、GPS、電腦皆遵循此路徑</div>
+    </div>
+    <div class="card">
+      <div class="card-title">摩爾定律是否終結？</div>
+      <ul>
+        <li><strong>支持終結</strong>：針對特定用途的晶片取代通用晶片</li>
+        <li>AI 晶片是最佳案例</li>
+        <li>物理微縮已接近原子極限</li>
+      </ul>
+      <div class="callout">演進方向：製程微縮 → 封裝整合 + 異構運算</div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ② TIMELINE -->
+<section id="timeline"><div class="si">
+  <h2>歷史脈絡 <span class="tag">冷戰 → 現今</span></h2>
+  <div id="timeline-container" class="svg-wrap" style="text-align: center; min-height: 200px;">
+    <span style="color: var(--muted);">Loading Timeline...</span>
+  </div>
+</div></section>
+
+<!-- ③ COUNTRIES MAP -->
+<section id="countries"><div class="si">
+  <h2>各國發展</h2>
+  <p style="color:var(--muted);font-size:12px;margin-bottom:12px">點擊地圖上的圓形標記，查看各國半導體發展詳情 →</p>
+
+  <div style="display: flex; flex-direction: column; gap: 24px;">
+    <!-- WORLD MAP SVG -->
+    <div style="position: relative;">
+      <div id="map-container" style="width: 100%; min-height: 200px; display: flex; justify-content: center; align-items: center;">
+        <span style="color: var(--muted);">Loading Map...</span>
+      </div>
+      <div id="map-zoom-ctrl">
+        <button class="map-zoom-btn" id="map-zoom-reset" title="還原" style="display:none; font-size:13px;">↺</button>
+        <button class="map-zoom-btn" id="map-zoom-in" title="放大">+</button>
+        <button class="map-zoom-btn" id="map-zoom-out" title="縮小" disabled>−</button>
+      </div>
+    </div>
+
+    <!-- INFO PANEL -->
+    <div class="info-panel" id="info-panel" style="margin-top: 0; display: block; animation: none;">
+      <div class="info-header" style="margin-bottom: 10px;">
+        <div class="info-title" id="info-title"></div>
+      </div>
+      <div class="info-grid" id="info-body"></div>
+    </div>
+  </div>
+
+  <script>
+    fetch('timeline.svg?v=5')
+      .then(res => {
+        if (!res.ok) throw new Error('Status: ' + res.status);
+        return res.text();
+      })
+      .then(svg => {
+        const container = document.getElementById('timeline-container');
+        container.innerHTML = svg;
+        container.style.minHeight = 'auto';
+      })
+      .catch(err => {
+        document.getElementById('timeline-container').innerHTML = '<span style="color: var(--rose);">無法載入時間軸: ' + err.message + '</span>';
+        console.error('Error loading timeline SVG:', err);
+      });
+
+    fetch('world-map.svg')
+      .then(res => res.text())
+      .then(svg => {
+        const container = document.getElementById('map-container');
+        container.innerHTML = svg;
+        container.style.minHeight = 'auto';
+        container.style.display = 'block';
+
+        const svgEl = container.querySelector('svg');
+        svgEl.style.width = '100%';
+        svgEl.style.height = 'auto';
+
+        const ORIG = { x: 0, y: 0, w: 900, h: 440 };
+        let vb = { ...ORIG };
+        let mapZoom = 1;
+        const MAP_MAX_ZOOM = 4;
+
+        document.getElementById('map-zoom-ctrl').style.display = 'flex';
+
+        function clamp() {
+          vb.x = Math.max(ORIG.x, Math.min(ORIG.x + ORIG.w - vb.w, vb.x));
+          vb.y = Math.max(ORIG.y, Math.min(ORIG.y + ORIG.h - vb.h, vb.y));
+        }
+
+        function commitVB() {
+          svgEl.setAttribute('viewBox', `${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+          document.getElementById('map-zoom-in').disabled = mapZoom >= MAP_MAX_ZOOM;
+          document.getElementById('map-zoom-out').disabled = mapZoom <= 1;
+          document.getElementById('map-zoom-reset').style.display = mapZoom > 1 ? 'flex' : 'none';
+        }
+
+        function toSVG(clientX, clientY) {
+          const r = svgEl.getBoundingClientRect();
+          return {
+            x: vb.x + (clientX - r.left) / r.width * vb.w,
+            y: vb.y + (clientY - r.top) / r.height * vb.h
+          };
+        }
+
+        function zoomAt(newZoom, fx, fy) {
+          newZoom = Math.min(MAP_MAX_ZOOM, Math.max(1, newZoom));
+          const nw = ORIG.w / newZoom, nh = ORIG.h / newZoom;
+          const rx = (fx - vb.x) / vb.w, ry = (fy - vb.y) / vb.h;
+          vb = { x: fx - rx * nw, y: fy - ry * nh, w: nw, h: nh };
+          clamp();
+          mapZoom = newZoom;
+          commitVB();
+        }
+
+        function center() { return { x: vb.x + vb.w / 2, y: vb.y + vb.h / 2 }; }
+
+        document.getElementById('map-zoom-in').onclick = () => { const c = center(); zoomAt(mapZoom * 1.5, c.x, c.y); };
+        document.getElementById('map-zoom-out').onclick = () => { const c = center(); zoomAt(mapZoom / 1.5, c.x, c.y); };
+        document.getElementById('map-zoom-reset').onclick = () => { vb = { ...ORIG }; mapZoom = 1; commitVB(); };
+
+        // Mouse drag to pan
+        let drag = null;
+        svgEl.addEventListener('mousedown', e => { drag = { cx: e.clientX, cy: e.clientY, vb: { ...vb } }; e.preventDefault(); });
+        window.addEventListener('mousemove', e => {
+          if (!drag) return;
+          const r = svgEl.getBoundingClientRect();
+          vb.x = drag.vb.x - (e.clientX - drag.cx) / r.width * vb.w;
+          vb.y = drag.vb.y - (e.clientY - drag.cy) / r.height * vb.h;
+          clamp(); commitVB();
+        });
+        window.addEventListener('mouseup', () => { drag = null; });
+
+        // Ctrl+scroll to zoom on desktop
+        svgEl.addEventListener('wheel', e => {
+          if (!e.ctrlKey) return;
+          e.preventDefault();
+          const pt = toSVG(e.clientX, e.clientY);
+          zoomAt(mapZoom * (e.deltaY < 0 ? 1.15 : 1 / 1.15), pt.x, pt.y);
+        }, { passive: false });
+
+        // Touch: pinch-to-zoom + single-finger pan when zoomed
+        let lastTouches = null;
+        svgEl.addEventListener('touchstart', e => {
+          lastTouches = Array.from(e.touches).map(t => ({ x: t.clientX, y: t.clientY }));
+        }, { passive: true });
+        svgEl.addEventListener('touchmove', e => {
+          const ts = Array.from(e.touches).map(t => ({ x: t.clientX, y: t.clientY }));
+          if (ts.length === 2 && lastTouches && lastTouches.length === 2) {
+            e.preventDefault();
+            const oldD = Math.hypot(lastTouches[0].x - lastTouches[1].x, lastTouches[0].y - lastTouches[1].y);
+            const newD = Math.hypot(ts[0].x - ts[1].x, ts[0].y - ts[1].y);
+            const mid = toSVG((ts[0].x + ts[1].x) / 2, (ts[0].y + ts[1].y) / 2);
+            zoomAt(mapZoom * newD / oldD, mid.x, mid.y);
+          } else if (ts.length === 1 && lastTouches && lastTouches.length === 1 && mapZoom > 1) {
+            e.preventDefault();
+            const r = svgEl.getBoundingClientRect();
+            vb.x -= (ts[0].x - lastTouches[0].x) / r.width * vb.w;
+            vb.y -= (ts[0].y - lastTouches[0].y) / r.height * vb.h;
+            clamp(); commitVB();
+          }
+          lastTouches = ts;
+        }, { passive: false });
+        svgEl.addEventListener('touchend', e => {
+          lastTouches = Array.from(e.touches).map(t => ({ x: t.clientX, y: t.clientY }));
+        }, { passive: true });
+
+        setTimeout(() => typeof showCountry === 'function' ? showCountry('taiwan', true) : null, 50);
+      })
+      .catch(err => {
+        document.getElementById('map-container').innerHTML = '<span style="color: var(--rose);">請使用本地伺服器 (如 Live Server) 來載入地圖 SVG 檔案以解決 CORS 問題。</span>';
+        console.error('Error loading SVG:', err);
+      });
+  </script>
+
+  <table style="margin-top:20px">
+    <tr><th>國家</th><th>優勢來源</th><th>關鍵弱點</th><th>當前地位</th></tr>
+    <tr><td><strong>🇺🇸 美國</strong></td><td>EDA、IP 架構、生態系</td><td>製造外移</td><td>設計 + 生態系霸主</td></tr>
+    <tr><td><strong>🇹🇼 台灣</strong></td><td>TSMC 先進製程</td><td>地緣政治風險</td><td>先進製造唯一選擇</td></tr>
+    <tr><td><strong>🇳🇱 荷蘭</strong></td><td>ASML EUV 整合</td><td>依賴盟友政治</td><td>EUV 機台唯一供應</td></tr>
+    <tr><td><strong>🇰🇷 韓國</strong></td><td>DRAM、NAND 量產</td><td>設計軟體依賴美</td><td>記憶體霸主</td></tr>
+    <tr><td><strong>🇯🇵 日本</strong></td><td>半導體材料、零件</td><td>整體產業已衰退</td><td>材料供應關鍵角色</td></tr>
+    <tr><td><strong>🇨🇳 中國</strong></td><td>廣大市場、成熟製程</td><td>先進製程、EDA、EUV 受阻</td><td>成熟製程突破，先進追趕中</td></tr>
+    <tr><td><strong>🇷🇺 俄羅斯</strong></td><td>（幾乎無）</td><td>嚴重依賴外國半導體</td><td>受制裁，軍事電子大幅受限</td></tr>
+  </table>
+</div></section>
+
+<!-- ④ ASIA BACKGROUND -->
+<section id="asia-bg"><div class="si">
+  <h2>亞洲半導體崛起背景 <span class="tag">第三部</span></h2>
+  <div class="grid" style="margin-top:14px">
+    <div class="card">
+      <div class="card-title">政治驅動</div>
+      <ul>
+        <li><strong>防堵共產勢力</strong>在亞洲華裔族群中擴張</li>
+        <li>透過經濟手段增加貿易與投資連結</li>
+        <li>使亞洲國家與美國主導的體系更加緊密</li>
+        <li>扶植民主資本主義國家對抗蘇聯</li>
+      </ul>
+      <div class="callout">日本、韓國、台灣皆受惠於此政治邏輯</div>
+    </div>
+    <div class="card">
+      <div class="card-title">經濟驅動</div>
+      <ul>
+        <li><strong>低廉人力成本</strong>有益商業利潤</li>
+        <li>工會機制不盛行，勞動彈性高</li>
+        <li>政府補貼與廉價貸款（日、韓尤甚）</li>
+        <li>高儲蓄率 → 銀行低利放貸 → 廉價資本</li>
+      </ul>
+      <div class="callout">廉價資本 + 廉價勞動力，支撐長期虧損等待競爭者退場</div>
+    </div>
+    <div class="card">
+      <div class="card-title">美國技術授權是起點</div>
+      <ul>
+        <li>美國出於政治利益提供官方技術授權</li>
+        <li>日本藉此打造消費電子（Sony 等）</li>
+        <li>韓國複製日本模式，再受美國扶植抗衡日本</li>
+        <li>台灣以代工定位取得不與美競爭的角色</li>
+      </ul>
+      <div class="callout">技術授權 → 市場實踐 → 反超原授權者</div>
+    </div>
+  </div>
+  <div class="callout">亞洲供應鏈的成型，歸功於 1960–1980 年代美國政治與經濟目標一致的時代背景。</div>
+</div></section>
+
+<!-- ⑤ DIVIDE -->
+<section id="divide"><div class="si">
+  <h2>亞洲 vs. 蘇聯 <span class="tag">第二部</span></h2>
+  <div class="compare" style="margin-bottom:14px">
+    <div class="compare-col">
+      <h4><span class="badge">亞洲 (日/韓/台) </span> 成功因素</h4>
+      <ul>
+        <li><strong>美國官方技術授權</strong>，合法技術起點</li>
+        <li><strong>國際市場驅動</strong>：出口導向，持續降本提效</li>
+        <li>市場競爭帶動技術、人才、資金良性循環</li>
+        <li>消費電子 → 半導體需求 → 量產規模效應</li>
+        <li>廉價資本支撐長期投資</li>
+      </ul>
+    </div>
+    <div class="compare-col">
+      <h4><span class="badge">蘇聯</span> 失敗因素</h4>
+      <ul>
+        <li><strong>無美國授權</strong>，只能抄襲，創新路徑由美國設定</li>
+        <li><strong>僅靠軍事客戶</strong>，未利用民用市場經濟誘因</li>
+        <li>職涯誘因是<strong>官僚體系晉升</strong>，非設計新產品</li>
+        <li>缺乏國際供應鏈，無法分攤研發成本</li>
+        <li>理論知識不差，<strong>量產能力大幅落後</strong></li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout">
+    關鍵差異：市場驅動 vs. 指令驅動。民用市場的競爭壓力是推動技術快速迭代的最強引擎。
+    亞洲透過出口競爭被逼著進步；蘇聯的軍事客戶則無此壓力。
+    <br><span class="annotation">不可小看自由市場的力量，有利益的地方就會有商業資源投入</span>
+  </div>
+</div></section>
+
+<!-- ⑥ US-CHINA -->
+<section id="uschina"><div class="si">
+  <h2>中美博弈 <span class="tag">第七～八部</span></h2>
+
+  <!-- 中美策略對比 -->
+  <div class="compare" style="margin-bottom:18px">
+    <div class="compare-col" style="border-color:#5fa8d350">
+      <h4><span class="badge">美國</span> 策略</h4>
+      <ul>
+        <li>EDA、機台、材料全面出口管制</li>
+        <li>零信任技術：驗證晶片是否遭惡意修改</li>
+        <li>川普貿易戰：混淆成貿易問題，<strong>實質是國安問題</strong></li>
+      </ul>
+    </div>
+    <div class="compare-col">
+      <h4><span class="badge">中國</span> 策略</h4>
+      <ul>
+        <li>以廣大市場打造自有技術</li>
+        <li>投資<strong>第三代半導體</strong>（碳化矽 SiC、氮化鎵 GaN）切入電動車、太陽能板市場</li>
+        <li>利用中國法律反制他國侵權指控</li>
+        <li>最終目標：取代美國控制的供應鏈（非加入）</li>
+      </ul>
+      <div class="callout" style="margin-top:8px">先進製程受阻 → 轉往下一代材料卡位</div>
+    </div>
+  </div>
+
+  <!-- 美國鎖喉點 -->
+  <div class="card" style="margin-bottom:14px">
+    <div class="card-title">美國鎖喉點</div>
+    <p style="color:var(--muted2);font-size:13px;line-height:1.6;margin-bottom:12px">美國在半導體供應鏈握有多個關鍵節點，形成「武器化的互賴關係」—中國依賴這些節點，美國也依賴中國市場。</p>
+    
+    <!-- 材料 + EDA + EUV 同一列 -->
+    <div class="grid" style="margin:0; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
+
+      <!-- EDA -->
+      <div class="card" style="background:var(--surface)">
+        <div class="card-title">EDA — 美國主導</div>
+        <ul>
+          <li><strong>美國掌握晶片設計能力 62%</strong></li>
+          <li>三大功能：模擬、設計、驗證，由 DARPA 與 SRC 資助孕育</li>
+        </ul>
+        <div style="display: flex; gap: 18px; align-items: center; margin-bottom: 12px;">
+          <div style="width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(var(--accent) 0% 32%, #6ee7b7 32% 62%, var(--amber) 62% 75%, var(--map-land) 75% 100%); flex-shrink: 0; border: 1px solid var(--border);"></div>
+          <div style="display: flex; flex-direction: column; gap: 5px; flex-grow: 1; min-width: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--muted2);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent);"></span>🇺🇸 Synopsys</span>
+              <strong style="color: var(--text);">32%</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--muted2);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #6ee7b7;"></span>🇺🇸 Cadence</span>
+              <strong style="color: var(--text);">30%</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--muted2);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--amber);"></span>🇩🇪 Siemens</span>
+              <strong style="color: var(--text);">13%</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--muted);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--map-land);"></span>其他</span>
+              <span style="color: var(--muted);">25%</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:10px;display:flex;flex-direction:column;gap:4px">
+          <a href="https://www.synopsys.com/glossary/what-is-electronic-design-automation.html" target="_blank" rel="noopener" style="font-size:11px;color:var(--muted2);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted2)'">↗ What is EDA — Synopsys</a>
+          <a href="https://tw.news.yahoo.com/news/eda-%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E7%82%BA%E4%BD%95%E7%BE%8E%E5%9C%8B%E8%83%BD%E9%9D%A0%E5%AE%83%E4%BE%86%E9%99%90%E5%88%B6%E4%B8%AD%E5%9C%8B%E7%9A%84%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%99%BC%E5%B1%95%EF%BC%9F-074814513.html" target="_blank" rel="noopener" style="font-size:11px;color:var(--muted2);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted2)'">↗ EDA 是什麼？為何美國能靠它限制中國半導體發展？</a>
+        </div>
+      </div>
+
+      <!-- 半導體材料 -->
+      <div class="card" style="background:var(--surface)">
+        <div class="card-title">半導體材料 — 日本供應全球過半</div>
+        <ul style="font-size:12px;padding-left:14px">
+          <li><strong>日本佔據 50% 以上</strong> 全球材料市場
+            <ul style="padding-left:14px;margin-top:3px">
+              <li><strong>光阻劑</strong>：日本市佔高達 90%</li>
+              <li><strong>矽晶圓</strong>：信越、SUMCO 兩家市佔過半</li>
+            </ul>
+          </li>
+        </ul>
+        <div style="display: flex; gap: 18px; align-items: center; margin: 12px 0;">
+          <div style="width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(#fb923c 0% 52%, #f8c46a 52% 67%, #2dd4bf 67% 82%, #f08080 82% 92%, #1b3d55 92% 100%); flex-shrink: 0; border: 1px solid var(--border);"></div>
+          <div style="display: flex; flex-direction: column; gap: 5px; flex-grow: 1; min-width: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--muted2);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #fb923c;"></span>🇯🇵 日本</span>
+              <strong style="color: var(--text);">52%</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--muted2);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #f8c46a;"></span>🇹🇼 台灣</span>
+              <strong style="color: var(--text);">15%</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--muted2);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2dd4bf;"></span>🇰🇷 韓國</span>
+              <strong style="color: var(--text);">15%</strong>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--muted);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #f08080;"></span>🇨🇳 中國</span>
+              <span style="color: var(--muted);">10%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 製造機台 (EUV) -->
+      <div class="card" style="background:var(--surface)">
+        <div class="card-title">製造機台 (EUV) — 先進製程必需</div>
+        <ul style="font-size:12px;padding-left:14px">
+          <li><strong>ASML 唯一供應</strong></li>
+          <li>荷蘭受美壓力管制出口</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 美日荷三方出口管制同盟 -->
+    <div class="callout" style="margin-top:12px">
+      <strong>美日荷三方出口管制同盟</strong>：2023 年 1 月，美日荷三方協議，分工封鎖中國先進晶片製造能力
+      <div style="margin-top:8px">
+        <a href="https://www.csis.org/analysis/clues-us-dutch-japanese-semiconductor-export-controls-deal-are-hiding-plain-sight" target="_blank" rel="noopener" style="font-size:11px;color:var(--muted2);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted2)'">↗ Clues to the US-Dutch-Japanese deal — CSIS</a>
+      </div>
+    </div>
+
+    <div class="callout"><span class="annotation">半導體業的集中趨勢也造就鎖喉點的存在</span></div>
+  </div>
+
+  <!-- AI 三要素：為何運算力是核心 -->
+  <div class="card" style="margin-top:14px">
+    <div class="card-title">為什麼晶片決定勝負</div>
+    <ul>
+      <li>駕馭 AI 需要三要素：<strong>資料</strong>、<strong>演算法</strong>、<strong style="color:var(--mint)">運算力</strong></li>
+      <li>中美在資料與演算法上皆無明顯優勢，關鍵差距在運算力</li>
+      <li>運算力取決於晶片 → 晶片戰核心</li>
+    </ul>
+    <div class="callout">美國目前遙遙領先；中國已在成熟製程大幅進展</div>
+  </div>
+  <div class="callout" style="margin-top:12px">
+    <div>中美矛盾：中國既是美國半導體產業的主要客戶，又是主要地緣政治敵人。
+    更根本的問題是：美國技術是否仍保持領先？</div>
+    <a href="https://www.businesstoday.com.tw/article/category/183015/post/202301100021/"
+       target="_blank" rel="noopener"
+       style="font-size:11px;color:var(--muted2);text-decoration:none;display:inline-block;margin-top:8px"
+       onmouseover="this.style.color='var(--accent)'"
+       onmouseout="this.style.color='var(--muted2)'">↗ 中國如何利用法律反制他國侵權指控 — 今周刊</a>
+  </div>
+
+</div></section>
+
+<!-- ⑦ COMPANIES -->
+<section id="companies"><div class="si">
+  <h2>公司故事 <span class="tag">第四～六部</span></h2>
+  <div class="grid">
+    <div class="card">
+      <div class="card-title"><span class="badge">快捷半導體 Fairchild</span>降價策略 -1957</div>
+      <ul>
+        <li><strong>目標</strong>：快速拿下民用市場，擺脫軍方單一客戶</li>
+        <li><strong>客戶</strong>：企業採購決策，理性考量 ROI</li>
+        <li><strong>飛輪效應</strong>：降價刺激採購量，帶動良性循環</li>
+      </ul>
+      <div class="callout">
+        <span class="annotation">
+          <strong>Tesla 的降價策略</strong>：特斯拉在中國的降價策略與快捷相似，旨在快速建立規模與資料優勢。
+          雖然 To C 市場的價格波動可能面臨消費者抗議，但長遠戰略價值（如競爭壓制）有機會大於短期成本。
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="badge">Intel</span>壯士斷腕 -1968</div>
+      <ul>
+        <li>放棄起家 DRAM，轉往微處理器</li>
+        <li><strong>完全複製</strong>製造：最優流程全廠一致複製</li>
+        <li>後因過度依賴 PC，錯失行動裝置市場</li>
+        <li>權力從工程師 → 專業經理人 → 短期利潤優先</li>
+      </ul>
+      <div class="callout">
+        <span class="annotation">
+          <strong>和碩 vs. 緯創</strong>：和碩原為 Apple Mac 代工廠，順利拿下 iPhone 代工；
+          緯創僅成為 iPhone 第三大代工廠，利潤不高，反而轉型踏入雲端伺服器市場。
+          「吃不到蘋果的贏家」— 成功深陷一個市場，反而是下一次轉型的障礙。
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="badge">Micron</span>成本領導 -1978</div>
+      <ul>
+        <li>在大多數美國 DRAM 廠退出時進場收購</li>
+        <li>提升機台 throughput、降低 cycle time</li>
+        <li>改變晶片設計 → 每片矽晶圓產出更多晶片</li>
+      </ul>
+      <div class="callout">最佳進場時機：價格低迷、競爭者破產時</div>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="badge">ASML</span>供應鏈護城河 -1984</div>
+      <ul>
+        <li>護城河是<strong>供應鏈管理能力</strong>，而非製造能力</li>
+        <li>本身僅生產 EUV 機台 15% 元件</li>
+        <li>其餘採購全球最精密產品整合</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="badge">Qualcomm</span>-1985</div>
+      <ul>
+        <li>踏入軍事與民用通訊（始於 DARPA 資助）</li>
+        <li>CDMA 技術主導行動通訊時代</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="badge">TSMC</span>代工典範 -1987</div>
+      <ul>
+        <li>代工模式打敗 Intel 整合模式</li>
+        <li>不與顧客競爭 → 成為<strong>協調者與規範制定者</strong></li>
+        <li>成為先進晶片製造的唯一可靠選擇</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title"><span class="badge">Nvidia</span>AI 受惠 -1993</div>
+      <ul>
+        <li>專注 GPU 設計（無廠設計模式）</li>
+        <li>成功踏入 AI 與資料中心市場</li>
+        <li>TSMC 代工模式的最大受益者</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  <p><span>晶片戰爭</span> 讀書筆記 · 共八部 + 序 + 結語 · Chris Miller 著</p>
+  <p style="margin-top:10px;font-size:11px">延伸閱讀：<a href="https://kopu.chat/semiconductor/" target="_blank" rel="noopener" style="color:var(--muted2);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted2)'">晶片戰爭完整導讀 — kopu.chat ↗</a></p>
+</footer>
+
+<script>
+/* NAV ACTIVE */
+const navLinks = document.querySelectorAll('nav a');
+const io = new IntersectionObserver(e => {
+  e.forEach(en => { if (en.isIntersecting) navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + en.target.id)); });
+}, { rootMargin: '-45% 0px -55% 0px' });
+document.querySelectorAll('section[id]').forEach(s => io.observe(s));
+navLinks.forEach(a => { a.addEventListener('click', e => { const href = a.getAttribute('href'); if (!href.startsWith('#')) return; e.preventDefault(); if (href === '#') { window.scrollTo({ top: 0, behavior: 'smooth' }); } else { document.querySelector(href)?.scrollIntoView({ behavior:'smooth' }); } }); });
+
+/* COUNTRY DATA */
+const data = {
+  usa: {
+    title: '🇺🇸 美國 — 先發優勢', color: '#5fa8d3',
+    note: '扶植日韓的政治策略，反而成為自身競爭壓力。但美國仍牢牢掌控供應鏈的最上游與最關鍵節點。',
+    blocks: [
+      { h:'關鍵優勢', l:['DARPA 資助孕育 EDA 三巨頭、高通','快捷半導體：降價策略搶民用市場','避免軍方單一客戶掌握命脈','擁有完整設計→IP→工具鏈生態系'] },
+      { h:'公司故事', link:'#companies', l:['<strong>快捷半導體</strong>：降價搶民用市場，擺脫軍方單一客戶','<strong>Intel</strong>：放棄 DRAM → 押注微處理器','<strong>Micron</strong>：唯一存活美國 DRAM 廠','<strong>Nvidia</strong>：GPU → AI 市場的受惠者','<strong>高通</strong>：始於 DARPA，主導行動通訊'] },
+      { h:'策略弱點', l:['扶植日本、韓國反成競爭壓力','製造逐漸外移至亞洲','Intel 成功從 DRAM 踏入個人電腦微處理器，但卻錯失行動裝置市場','科技企業短期利潤導向問題'] },
+      { h:'當前武器', l:['EDA：Synopsys 32% + Cadence 30%','出口管制：EDA + EUV 機台 + 材料','零信任技術防範惡意晶片','設計與生態系霸主'] },
+    ],
+  },
+  japan: {
+    title: '🇯🇵 日本 — 盛極而衰', color: '#fb923c',
+    note: '成功為失敗之母 — DRAM 的成功，阻礙了對下一波趨勢的洞察',
+    blocks: [
+      { h:'崛起原因', l:['受美國戰後策略授權，消費電子崛起','廉價銀行貸款 + 政府支持 → 可長期虧損','DRAM 最終超越美國'] },
+      { h:'錯失的機會', l:['過度投資 DRAM → 廉價資金使業者只在乎產出，較少考慮獲利','錯過個人電腦微處理器的崛起','忽略了 NAND 的發明，後由 Intel 推向市場'] },
+      { h:'材料優勢（至今）', l:['光刻膠（全球主要供應來源）','特殊化學品、高純度氣體','精密機械零件'] },
+      { h:'掌握技術', bare: true, l:[
+        { cls: 'quote', text: '「我們的計畫是用新產品引導大眾，而不是問大眾想要什麼產品，大眾不知道什麼東西可能生產出來，但我們知道。」— 盛田昭夫（Sony 創辦人）' },
+        '<span class="annotation">掌握技術，代表掌握對未來的想像。技術領先者定義產品類別，消費者只能接受或拒絕，而非主導方向。</span>'
+      ] },
+    ],
+  },
+  korea: {
+    title: '🇰🇷 韓國 — 第三方獲益', color: '#2dd4bf',
+    note: '策略性時機入場：在大多數競爭者破產退出時切入市場，是收購大宗商品企業的最佳時機。',
+    blocks: [
+      { h:'崛起策略', l:['美國為抗衡日本，在亞洲尋更便宜供應','廉價銀行貸款 + 政府支持大型財團','日本泡沫破裂後乘勢取代 DRAM 份額','利用美日角力空隙切入'] },
+      { h:'當前地位', l:['<strong>三星</strong>：DRAM + NAND + 代工三棲','<strong>SK 海力士</strong>：記憶體市場龍頭','HBM 高頻寬記憶體（AI 時代關鍵）','DRAM + NAND 記憶體霸主'] },
+      { h:'弱點', l:['設計軟體（EDA）依賴美國','先進製造設備依賴 ASML','記憶體市場景氣循環風險'] },
+    ],
+  },
+  china: {
+    title: '🇨🇳 中國 — 後發追趕', color: '#f08080',
+    note: '中美矛盾：中國既是美國半導體產業的主要客戶，又是主要地緣政治敵人。這種「武器化的互賴關係」是雙方最大的結構性張力。',
+    blocks: [
+      { h:'目標與策略', l:['最終目標：<strong>取代</strong>美國控制的供應鏈（非加入）','以廣大市場換取技術授權','政府大量補貼成熟製程，已大幅進展'] },
+      { h:'已突破領域', l:['成熟製程（≥14nm）已大幅進展','第三代半導體（碳化矽、氮化鎵）積極布局','電動車、太陽能市場切入'] },
+      { h:'仍受阻礙', l:['先進製程（<7nm）技術缺口大','EDA 設計軟體受出口管制','EUV 光刻機無法取得'] },
+      { h:'地緣政治手段', l:['利用中國法律反制他國侵權','以廣大市場作為談判籌碼','華為「游擊戰略」甩開部分禁令'] },
+    ],
+  },
+  russia: {
+    title: '🇷🇺 俄羅斯（蘇聯）— 系統性失敗', color: '#94a3b8',
+    note: '俄羅斯對外國半導體的依賴，使美國及盟友在制裁上握有強大籌碼 → 缺乏自主供應鏈，在地緣政治衝突中極為脆弱。',
+    blocks: [
+      { h:'蘇聯失敗根源', l:['職涯誘因：追求官僚晉升 > 設計新產品','抄襲心態：創新路徑由美國設定','過度依賴軍事客戶，未利用民用市場','缺乏國際供應鏈，無法分攤研發成本'] },
+      { h:'與亞洲的關鍵差異', l:['無美國技術授權（亞洲有）','無國際市場驅動（亞洲出口競爭）','無民用市場競爭（無飛輪效應）','理論知識不差，量產能力大幅落後'] },
+      { h:'當前處境', l:['嚴重依賴外國半導體','俄烏戰爭後遭美及盟友制裁','軍事電子設備大幅受限'] },
+    ],
+  },
+  netherlands: {
+    title: '🇳🇱 荷蘭 (ASML) — 供應鏈護城河', color: '#a78bfa',
+    note: 'ASML 的強大在於整合，而非製造。',
+    blocks: [
+      { h:'ASML 護城河', link:'#companies', l:['本身僅生產 EUV 機台 15% 元件','其餘採購全球最精密產品整合','護城河 = <strong>供應鏈管理能力</strong>，非個別元件','全球唯一 EUV 光刻機供應商'] },
+      { h:'為何如此關鍵', l:['先進晶片（<7nm）非 EUV 不可製造','中國無法取得 EUV → 先進製程卡死','美國出口管制的重要執行點'] },
+      { h:'地緣政治處境', l:['荷蘭受美國施壓，限制 EUV 出口中國','依賴盟友政治支持維持管制','本身體量小，但戰略地位極高'] },
+    ],
+  },
+  taiwan: {
+    title: '🇹🇼 台灣 (TSMC) — 代工典範', color: '#f8c46a',
+    note: '「不競爭」的定位，使 TSMC 成為所有人都願意合作的平台 → 台灣在地緣政治夾縫中找到的最佳定位。',
+    blocks: [
+      { h:'TSMC 護城河', link:'#companies', l:['代工模式打敗 Intel 整合模式','不與顧客競爭 → 成為協調者與規範制定者','先進製程技術持續領先','成為全球先進晶片唯一可靠製造來源'] },
+      { h:'代工模式優勢', link:'#companies', l:['Nvidia、Apple、AMD 皆依賴 TSMC','「不競爭」定位，反而成為最大護城河','多數公司同意使用 TSMC 制定的規範'] },
+      { h:'地緣政治風險', l:['台海緊張局勢 = 全球晶片風險','美國積極推動台積電赴亞利桑那設廠','「矽盾」：台灣戰略價值來自晶片'] },
+    ],
+  }
+};
+
+let current = null;
+function showCountry(key, preventScroll = false) {
+  const d = data[key];
+  if (!d) return;
+  // deselect previous
+  if (current) document.getElementById('m-' + current)?.classList.remove('selected');
+  current = key;
+  document.getElementById('m-' + key)?.classList.add('selected');
+
+  document.getElementById('info-title').innerHTML = `<span style="color:${d.color}">${d.title}</span>`;
+  let html = '';
+  if (d.note) html += `<div class="info-full"><div class="callout">${d.note}</div></div>`;
+  html += d.blocks.map(b => {
+    const title = b.h ? (b.link
+      ? `<h5><a href="${b.link}" onclick="event.preventDefault();document.querySelector('${b.link}').scrollIntoView({behavior:'smooth'})" style="color:inherit;text-decoration:none;cursor:pointer">${b.h} <span style="color:var(--accent)">↗</span></a></h5>`
+      : `<h5>${b.h}</h5>`) : '';
+    return `<div class="info-block">${title}<ul${b.bare ? ' style="list-style:none;padding-left:0"' : ''}>${b.l.map(i => typeof i === 'object' ? `<li class="${i.cls}">${i.text}</li>` : `<li>${i}</li>`).join('')}</ul></div>`;
+  }).join('');
+  document.getElementById('info-body').innerHTML = html;
+  
+  if (!preventScroll && window.innerWidth <= 920) {
+    const panel = document.getElementById('info-panel');
+    setTimeout(() => panel.scrollIntoView({ behavior:'smooth', block:'nearest' }), 50);
+  }
+}
+</script>
+</body>
+</html>
