@@ -108,9 +108,6 @@ a.card-link:hover .card { border-color: var(--accent); box-shadow: 0 0 0 1px #62
 /* ── CALLOUT ── */
 .callout { border-radius: 8px; padding: 9px 13px; margin: 9px 0; font-size: 13px; background: var(--surface); border: 1px solid var(--border); color: var(--mint); }
 .card .callout, .compare-col .callout { margin-top: 8px; margin-bottom: 0; }
-.c-red   { background: #f0808015; border-color: #f0808050; color: var(--rose); }
-.c-amber { background: #f8c46a10; border-color: #f8c46a50; color: var(--amber); }
-
 
 /* ── INSIGHT ── */
 .insight { padding: 16px 20px; margin-bottom: 16px; text-align: center; }
