@@ -88,6 +88,7 @@ h3 { font-size: 13px; font-weight: 600; color: var(--muted2); margin: 16px 0 8px
 /* ── CARDS ── */
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 15px 17px; transition: border-color .2s, box-shadow .2s; }
 .card-title { font-size: 13px; font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; gap: 7px; color: var(--muted2); }
+.card-title strong { color: var(--text); font-weight: 600; }
 .card ul { padding-left: 14px; color: var(--muted2); }
 .card ul li { margin-bottom: 5px; font-size: 13px; }
 .card ul li strong { color: var(--text); font-weight: 600; }
