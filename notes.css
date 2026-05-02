@@ -132,7 +132,7 @@ a.card-link:hover .card { border-color: var(--accent); box-shadow: 0 0 0 1px #62
 
 /* ── TABLE ── */
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th { background: var(--surface); color: var(--muted2); font-weight: 600; padding: 9px 13px; text-align: left; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+th { background: var(--surface); color: var(--muted2); font-weight: 600; padding: 9px 13px; text-align: left; letter-spacing: .04em; text-transform: uppercase; border-bottom: 1px solid var(--border); }
 td { padding: 9px 13px; border-bottom: 1px solid var(--border); color: var(--muted2); vertical-align: top; }
 td strong { color: var(--text); }
 
