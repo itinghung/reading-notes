@@ -83,7 +83,7 @@ h2 .tag { font-size: 10px; font-weight: 500; background: var(--border); color: v
 h3 { font-size: 13px; font-weight: 600; color: var(--muted2); margin: 16px 0 8px; }
 
 /* ── GRID ── */
-.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(285px, 1fr)); }
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); }
 
 /* ── CARDS ── */
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 15px 17px; transition: border-color .2s, box-shadow .2s; }
