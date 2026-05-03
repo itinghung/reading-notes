@@ -1,0 +1,35 @@
+<svg viewBox="0 0 440 106" width="100%" style="max-width:700px;display:block;margin:0 auto">
+  <style>
+    .cw-ax  { stroke:var(--text); stroke-width:1.5; fill:none; opacity:0.6 }
+    .cw-lbl { font-family:inherit; fill:var(--highlight); font-size:13px; font-weight:600; text-anchor:middle }
+    .cw-sub { font-family:inherit; fill:var(--text-dim); font-size:10px; text-anchor:middle }
+    .cw-bad { font-family:inherit; fill:var(--highlight); font-size:10px; text-anchor:middle }
+    .cw-ok  { font-family:inherit; fill:var(--text-dim); font-size:10px; text-anchor:middle; opacity:0.6 }
+  </style>
+
+  <!-- Axis: two segments with narrow gap; right segment extends to arrowhead tip -->
+  <line x1="40" y1="55" x2="168" y2="55" class="cw-ax"/>
+  <line x1="272" y1="55" x2="406" y2="55" class="cw-ax"/>
+  <line x1="397" y1="49" x2="406" y2="55" stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="397" y1="61" x2="406" y2="55" stroke="var(--text)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Axis labels on the same level as the line -->
+  <text x="22" y="55" class="cw-sub" dominant-baseline="middle">低</text>
+  <text x="420" y="55" class="cw-sub" dominant-baseline="middle">高</text>
+  <text x="220" y="55" class="cw-sub" dominant-baseline="middle">實際衝突風險</text>
+
+  <!-- 核戰：MAD 使嚇阻有效 → 實際風險低 -->
+  <text x="100" y="55" font-family="inherit" font-size="15" fill="var(--text)" text-anchor="middle" dominant-baseline="middle" opacity="0.6">☢&#xFE0E;</text>
+  <text x="100" y="25" class="cw-lbl">核戰</text>
+  <text x="100" y="39" class="cw-sub">保證同歸於盡 (MAD)</text>
+  <text x="100" y="72" class="cw-ok">→ 嚇阻機制有效</text>
+  <text x="100" y="85" class="cw-ok">→ 發動意願極低</text>
+  <text x="100" y="100" font-family="inherit" fill="var(--text-dim)" font-size="7" text-anchor="middle" opacity="0.4">MAD: Mutual Assured Destruction</text>
+
+  <!-- 網路戰：不確定性使嚇阻失靈 → 實際風險高 -->
+  <text x="340" y="55" font-family="inherit" font-size="16" fill="var(--highlight)" text-anchor="middle" dominant-baseline="middle" opacity="0.8">⚡&#xFE0E;</text>
+  <text x="340" y="25" class="cw-lbl">網路戰</text>
+  <text x="340" y="39" class="cw-sub">範圍不明確，悄聲無息</text>
+  <text x="340" y="72" class="cw-bad">→ 嚇阻機制失靈</text>
+  <text x="340" y="85" class="cw-bad">→ 軍備競賽不穩定</text>
+</svg>

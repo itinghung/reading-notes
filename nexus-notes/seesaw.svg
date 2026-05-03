@@ -1,0 +1,29 @@
+<svg viewBox="0 0 440 148" width="100%" style="max-width:440px;display:block;margin:0 auto">
+  <style>
+    .ss-beam   { stroke:var(--text); stroke-width:3; stroke-linecap:round; fill:none }
+    .ss-struct { stroke:var(--text); stroke-width:2; fill:none; stroke-linecap:round }
+    .ss-fill   { fill:var(--text); opacity:0.4 }
+    .ss-lbl    { font-family:inherit; fill:var(--highlight); font-size:14px; font-weight:600 }
+    .ss-sub    { font-family:inherit; fill:var(--text-dim); font-size:11px }
+  </style>
+  <!-- Ground -->
+  <line x1="200" y1="126" x2="240" y2="126" class="ss-struct"/>
+  <!-- Fulcrum -->
+  <polygon points="220,101 207,125 233,125" class="ss-fill"/>
+  <!-- Beam: passes through fulcrum tip (220,101); left end lower, right end higher -->
+  <line x1="60" y1="118" x2="380" y2="84" class="ss-beam"/>
+  <!-- Left arm + plate -->
+  <line x1="60" y1="118" x2="60" y2="130" class="ss-struct"/>
+  <line x1="32" y1="130" x2="88" y2="130" stroke="var(--text)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Right arm + plate -->
+  <line x1="380" y1="84" x2="380" y2="96" class="ss-struct"/>
+  <line x1="352" y1="96" x2="408" y2="96" stroke="var(--text)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Weight dot on left -->
+  <circle cx="60" cy="125" r="5" class="ss-fill"/>
+  <!-- Left labels -->
+  <text x="18" y="75" class="ss-lbl">秩序</text>
+  <text x="18" y="90" class="ss-sub">穩定社會，但壓抑真相</text>
+  <!-- Right labels -->
+  <text x="422" y="41" class="ss-lbl" text-anchor="end">真相</text>
+  <text x="422" y="56" class="ss-sub" text-anchor="end">修正錯誤，但動搖秩序</text>
+</svg>
