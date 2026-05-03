@@ -62,7 +62,7 @@
         <div style="background:#1b496530;border:1px solid var(--accent);border-radius:8px;padding:14px 8px;text-align:center">
           <div style="font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--accent);text-transform:uppercase;margin-bottom:8px">現今：晶片決定勝負</div>
           <div style="font-size:24px;color:var(--accent);line-height:1;margin-bottom:8px">◈</div>
-          <div style="font-size:12px;font-weight:700;color:var(--mint)">運算力</div>
+          <div style="font-size:12px;font-weight:700;color:var(--highlight)">運算力</div>
         </div>
       </div>
     </div>
@@ -85,7 +85,7 @@
         </div>
         <div style="background:#1b496528;border:1px solid var(--accent);border-radius:8px;padding:12px 14px">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-            <span style="font-size:12px;font-weight:700;color:var(--mint)">高階晶片</span>
+            <span style="font-size:12px;font-weight:700;color:var(--highlight)">高階晶片</span>
             <span style="font-size:10px;background:#1b496550;color:var(--accent);padding:2px 7px;border-radius:4px">先進製程</span>
           </div>
           <div style="height:5px;background:var(--border);border-radius:3px;margin-bottom:9px">
@@ -117,7 +117,7 @@
         <div style="display: flex; gap: 14px;">
           <div style="display: flex; flex-direction: column; align-items: center;">
             <div style="width: 26px; height: 26px; border-radius: 50%; background: var(--bg); border: 1.5px solid var(--accent); display: flex; align-items: center; justify-content: center; font-size: 13px; z-index: 1;"><span class="em">🎖️</span></div>
-            <div style="width: 2px; height: 24px; background: linear-gradient(to bottom, var(--accent), var(--mint)); opacity: 0.6; margin: -2px 0;"></div>
+            <div style="width: 2px; height: 24px; background: linear-gradient(to bottom, var(--accent), var(--highlight)); opacity: 0.6; margin: -2px 0;"></div>
           </div>
           <div style="padding-bottom: 16px; padding-top: 2px;">
             <div style="font-size: 12px; font-weight: 700; color: var(--text-bright);">軍用市場先行</div>
@@ -130,7 +130,7 @@
             <div style="width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 13px; z-index: 1; box-shadow: 0 0 10px rgba(98, 182, 203, 0.3);"><span class="em">🚀</span></div>
           </div>
           <div style="padding-top: 2px;">
-            <div style="font-size: 12px; font-weight: 700; color: var(--mint);">民用大眾市場爆發</div>
+            <div style="font-size: 12px; font-weight: 700; color: var(--highlight);">民用大眾市場爆發</div>
             <div style="font-size: 11px; color: var(--text); margin-top: 1px;">良率提升與規模化，價格劇降</div>
             <a href="#companies" onclick="event.preventDefault();document.getElementById('companies').scrollIntoView({behavior:'smooth'})" style="font-size:11px;color:var(--accent);text-decoration:none;display:inline-block;margin-top:5px" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">↗ Fairchild: 降價策略快速吃下民用市場</a>
           </div>
@@ -197,7 +197,7 @@
         container.style.minHeight = 'auto';
       })
       .catch(err => {
-        document.getElementById('timeline-container').innerHTML = '<span style="color: var(--rose);">無法載入時間軸: ' + err.message + '</span>';
+        document.getElementById('timeline-container').innerHTML = '<span style="color: var(--danger);">無法載入時間軸: ' + err.message + '</span>';
         console.error('Error loading timeline SVG:', err);
       });
 
@@ -305,7 +305,7 @@
         setTimeout(() => typeof showCountry === 'function' ? showCountry('taiwan', true) : null, 50);
       })
       .catch(err => {
-        document.getElementById('map-container').innerHTML = '<span style="color: var(--rose);">請使用本地伺服器 (如 Live Server) 來載入地圖 SVG 檔案以解決 CORS 問題。</span>';
+        document.getElementById('map-container').innerHTML = '<span style="color: var(--danger);">請使用本地伺服器 (如 Live Server) 來載入地圖 SVG 檔案以解決 CORS 問題。</span>';
         console.error('Error loading SVG:', err);
       });
   </script>
@@ -434,7 +434,7 @@
           <li>三大功能：模擬、設計、驗證，由 DARPA 與 SRC 資助孕育</li>
         </ul>
         <div style="display: flex; gap: 18px; align-items: center; margin-bottom: 12px;">
-          <div style="width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(var(--accent) 0% 32%, #6ee7b7 32% 62%, var(--amber) 62% 75%, var(--text-dim) 75% 100%); flex-shrink: 0; border: 1px solid var(--border);"></div>
+          <div style="width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(var(--accent) 0% 32%, #6ee7b7 32% 62%, var(--warning) 62% 75%, var(--text-dim) 75% 100%); flex-shrink: 0; border: 1px solid var(--border);"></div>
           <div style="display: flex; flex-direction: column; gap: 5px; flex-grow: 1; min-width: 0;">
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
               <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent);"></span>🇺🇸 Synopsys</span>
@@ -445,7 +445,7 @@
               <strong style="color: var(--text-bright);">30%</strong>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--amber);"></span>🇩🇪 Siemens</span>
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--warning);"></span>🇩🇪 Siemens</span>
               <strong style="color: var(--text-bright);">13%</strong>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
@@ -519,7 +519,7 @@
   <div class="card" style="margin-top:14px">
     <div class="card-title">為什麼晶片決定勝負</div>
     <ul>
-      <li>駕馭 AI 需要三要素：<strong>資料</strong>、<strong>演算法</strong>、<strong style="color:var(--mint)">運算力</strong></li>
+      <li>駕馭 AI 需要三要素：<strong>資料</strong>、<strong>演算法</strong>、<strong style="color:var(--highlight)">運算力</strong></li>
       <li>中美在資料與演算法上皆無明顯優勢，關鍵差距在運算力</li>
       <li>運算力取決於晶片 → 晶片戰核心</li>
     </ul>

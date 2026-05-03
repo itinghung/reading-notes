@@ -9,9 +9,9 @@
   --text:         #5fa8d3;
   --text-dim:     #4e86aa;
   --accent:       #62b6cb;
-  --mint:         #bee9e8;
-  --amber:        #f8c46a;
-  --rose:         #f08080;
+  --highlight:         #bee9e8;
+  --warning:        #f8c46a;
+  --danger:         #f08080;
 }
 
 /* ── RESET ── */
@@ -108,18 +108,18 @@ a.card-link:hover .card { border-color: var(--accent); box-shadow: 0 0 0 1px #62
 .hash-tag::before { content: "#"; color: var(--text-dim); }
 
 /* ── CALLOUT ── */
-.callout { border-radius: 8px; padding: 9px 13px; margin: 9px 0; font-size: 13px; background: var(--bg); border: 1px solid var(--border); color: var(--mint); }
+.callout { border-radius: 8px; padding: 9px 13px; margin: 9px 0; font-size: 13px; background: var(--bg); border: 1px solid var(--border); color: var(--highlight); }
 .card .callout, .compare-col .callout { margin-top: 8px; margin-bottom: 0; }
 
 /* ── INSIGHT ── */
 .insight { padding: 16px 20px; margin-bottom: 16px; text-align: center; }
-.insight p { color: var(--mint); font-size: 15px; line-height: 1.6; }
+.insight p { color: var(--highlight); font-size: 15px; line-height: 1.6; }
 
 /* ── QUOTE ── */
 .quote { border-left: 2px solid var(--text); padding: 4px 0 4px 12px; color: var(--text); font-style: italic; list-style: none; margin-left: 0; line-height: 1.6; }
 
 /* ── ANNOTATION ── */
-.annotation { color: var(--amber); font-style: normal; }
+.annotation { color: var(--warning); font-style: normal; }
 .annotation::before { content: "📌 "; font-style: normal; font-weight: 600; }
 
 /* ── COMPARE ── */
