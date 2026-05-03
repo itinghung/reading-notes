@@ -3,7 +3,6 @@
 /* ── THEME TOKENS ── */
 :root {
   --bg:           #0d1f2e;
-  --surface:      #132638;
   --card:         #192f44;
   --border:       #1b4965;
   --text-bright:  #cae9ff;
@@ -85,6 +84,7 @@ p { color: var(--text); }
 
 /* ── GRID ── */
 .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); }
+.grid-halves { grid-template-columns: 1fr 1fr; }
 
 /* ── CARDS ── */
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 15px 17px; transition: border-color .2s, box-shadow .2s; }
@@ -133,7 +133,10 @@ a.card-link:hover .card { border-color: var(--accent); box-shadow: 0 0 0 1px #62
 
 /* ── TABLE ── */
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
-th { background: var(--bg); color: var(--text); font-weight: 600; padding: 9px 13px; text-align: left; letter-spacing: .04em; text-transform: uppercase; border-bottom: 1px solid var(--border); }
+.table-scroll { overflow-x: auto; margin-top: 8px; }
+th { background: var(--card); color: var(--text); font-weight: 600; padding: 9px 13px; text-align: left; border-bottom: 1px solid var(--border); }
+th[scope="col"] { color: var(--text-bright); letter-spacing: .04em; text-transform: uppercase; }
+th[scope="row"] { color: var(--text-bright); white-space: nowrap; }
 td { padding: 9px 13px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
 td strong { color: var(--text-bright); }
 
