@@ -1,0 +1,10 @@
+styling-notes.md
+debug-notes.md
+CLAUDE.md
+.claude/
+.playwright-mcp/
+.DS_Store
+*.png
+*.jpg
+!assets/favicon.png
+assets/favicon.svg
