@@ -46,14 +46,14 @@
   <div class="grid">
     <div class="card" style="grid-column:1/-1">
       <div class="card-title">掌握勢力的資源隨時代演變</div>
-      <div style="display:grid;grid-template-columns:1fr 18px 1fr 18px 1fr;align-items:center;margin-top:10px;gap:0">
-        <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px 8px;text-align:center">
+      <div style="display:grid;grid-template-columns:1fr 18px 1fr 18px 1fr;align-items:center;gap:0">
+        <div class="card inner-card" style="text-align:center">
           <div style="font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--text-dim);text-transform:uppercase;margin-bottom:8px">二戰：工業生產力</div>
           <div style="font-size:24px;color:var(--text);line-height:1;margin-bottom:8px">⚙&#xFE0E;</div>
           <div style="font-size:12px;font-weight:600;color:var(--text)">鋼鐵與鋁</div>
         </div>
         <div style="text-align:center;color:var(--text);font-size:20px;font-weight:300">→</div>
-        <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px 8px;text-align:center">
+        <div class="card inner-card" style="text-align:center">
           <div style="font-size:16px;font-weight:700;letter-spacing:.08em;color:var(--text-dim);text-transform:uppercase;margin-bottom:8px">冷戰：核武優勢</div>
           <div style="font-size:24px;color:var(--text);line-height:1;margin-bottom:8px">☢&#xFE0E;</div>
           <div style="font-size:12px;font-weight:600;color:var(--text)">原子武器</div>
@@ -68,8 +68,8 @@
     </div>
     <div class="card">
       <div class="card-title">低階 vs. 高階晶片利潤邏輯</div>
-      <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
-        <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:12px 14px">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="card inner-card">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
             <span style="font-size:12px;font-weight:700;color:var(--text)">低階晶片</span>
             <span style="font-size:10px;background:var(--bg);color:var(--text);padding:2px 7px;border-radius:4px">成熟製程</span>
@@ -77,10 +77,10 @@
           <div style="height:5px;background:var(--border);border-radius:3px;margin-bottom:9px">
             <div style="height:100%;width:42%;background:var(--text);border-radius:3px;opacity:.6"></div>
           </div>
-          <ul style="padding-left:14px;margin:0">
-            <li style="font-size:11px;color:var(--text);margin-bottom:3px">折舊完畢後 <strong style="color:var(--text-bright)">利潤提升</strong></li>
-            <li style="font-size:11px;color:var(--text)">受中國補貼直接衝擊</li>
-            <li style="font-size:11px;color:var(--text);margin-top:4px">未來 → 升級漸緩的<strong style="color:var(--text-bright)">通用處理器</strong>，一般消費市場</li>
+          <ul>
+            <li>折舊完畢後 <strong>利潤提升</strong></li>
+            <li>受中國補貼直接衝擊</li>
+            <li>未來 → 升級漸緩的<strong>通用處理器</strong>，一般消費市場</li>
           </ul>
         </div>
         <div style="background:#1b496528;border:1px solid var(--accent);border-radius:8px;padding:12px 14px">
@@ -91,17 +91,17 @@
           <div style="height:5px;background:var(--border);border-radius:3px;margin-bottom:9px">
             <div style="height:100%;width:72%;background:var(--accent);border-radius:3px"></div>
           </div>
-          <ul style="padding-left:14px;margin:0">
-            <li style="font-size:11px;color:var(--text);margin-bottom:3px">TSMC 營收 <strong style="color:var(--text-bright)">&gt;50%</strong> 來自高階</li>
-            <li style="font-size:11px;color:var(--text)">中國補貼影響相對有限</li>
-            <li style="font-size:11px;color:var(--text);margin-top:4px">未來 → 強大<strong style="color:var(--text-bright)">訂製 AI 晶片</strong>，專為特定任務最佳化</li>
+          <ul>
+            <li>TSMC 營收 <strong>&gt;50%</strong> 來自高階</li>
+            <li>中國補貼影響相對有限</li>
+            <li>未來 → 強大<strong>訂製 AI 晶片</strong>，專為特定任務最佳化</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="card">
       <div class="card-title">技術應用路徑</div>
-      <div style="display: flex; flex-direction: column; margin-top: 10px; padding-left: 4px;">
+      <div style="display: flex; flex-direction: column; padding-left: 4px;">
         <!-- Step 1 -->
         <div style="display: flex; gap: 14px;">
           <div style="display: flex; flex-direction: column; align-items: center;">
@@ -136,7 +136,7 @@
           </div>
         </div>
       </div>
-      <div class="callout" style="margin-top: 16px;">通訊、GPS、電腦皆遵循此路徑</div>
+      <div class="callout">通訊、GPS、電腦皆遵循此路徑</div>
     </div>
     <div class="card">
       <div class="card-title">摩爾定律是否終結？</div>
@@ -325,7 +325,7 @@
 <!-- ④ ASIA BACKGROUND -->
 <section id="asia-bg"><div class="si">
   <h2>亞洲半導體崛起背景 <span class="tag">第三部</span></h2>
-  <div class="grid" style="margin-top:14px">
+  <div class="grid">
     <div class="card">
       <div class="card-title">政治驅動</div>
       <ul>
@@ -363,26 +363,28 @@
 <!-- ⑤ DIVIDE -->
 <section id="divide"><div class="si">
   <h2>亞洲 vs. 蘇聯 <span class="tag">第二部</span></h2>
-  <div class="compare" style="margin-bottom:14px">
-    <div class="compare-col">
-      <h4><span class="badge">亞洲 (日/韓/台) </span> 成功因素</h4>
-      <ul>
-        <li><strong>美國官方技術授權</strong>，合法技術起點</li>
-        <li><strong>國際市場驅動</strong>：出口導向，持續降本提效</li>
-        <li>市場競爭帶動技術、人才、資金良性循環</li>
-        <li>消費電子 → 半導體需求 → 量產規模效應</li>
-        <li>廉價資本支撐長期投資</li>
-      </ul>
-    </div>
-    <div class="compare-col">
-      <h4><span class="badge">蘇聯</span> 失敗因素</h4>
-      <ul>
-        <li><strong>無美國授權</strong>，只能抄襲，創新路徑由美國設定</li>
-        <li><strong>僅靠軍事客戶</strong>，未利用民用市場經濟誘因</li>
-        <li>職涯誘因是<strong>官僚體系晉升</strong>，非設計新產品</li>
-        <li>缺乏國際供應鏈，無法分攤研發成本</li>
-        <li>理論知識不差，<strong>量產能力大幅落後</strong></li>
-      </ul>
+  <div class="card">
+    <div class="grid">
+      <div class="card inner-card">
+        <div class="card-title">亞洲 (日/韓/台) 成功因素</div>
+        <ul>
+          <li><strong>美國官方技術授權</strong>，合法技術起點</li>
+          <li><strong>國際市場驅動</strong>：出口導向，持續降本提效</li>
+          <li>市場競爭帶動技術、人才、資金良性循環</li>
+          <li>消費電子 → 半導體需求 → 量產規模效應</li>
+          <li>廉價資本支撐長期投資</li>
+        </ul>
+      </div>
+      <div class="card inner-card">
+        <div class="card-title">蘇聯失敗因素</div>
+        <ul>
+          <li><strong>無美國授權</strong>，只能抄襲，創新路徑由美國設定</li>
+          <li><strong>僅靠軍事客戶</strong>，未利用民用市場經濟誘因</li>
+          <li>職涯誘因是<strong>官僚體系晉升</strong>，非設計新產品</li>
+          <li>缺乏國際供應鏈，無法分攤研發成本</li>
+          <li>理論知識不差，<strong>量產能力大幅落後</strong></li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="callout">
@@ -396,38 +398,43 @@
 <section id="uschina"><div class="si">
   <h2>中美博弈 <span class="tag">第七～八部</span></h2>
 
+  <div class="grid">
+
   <!-- 中美策略對比 -->
-  <div class="compare" style="margin-bottom:18px">
-    <div class="compare-col" style="border-color:#5fa8d350">
-      <h4><span class="badge">美國</span> 策略</h4>
-      <ul>
-        <li>EDA、機台、材料全面出口管制</li>
-        <li>零信任技術：驗證晶片是否遭惡意修改</li>
-        <li>川普貿易戰：混淆成貿易問題，<strong>實質是國安問題</strong></li>
-      </ul>
-    </div>
-    <div class="compare-col">
-      <h4><span class="badge">中國</span> 策略</h4>
-      <ul>
-        <li>以廣大市場打造自有技術</li>
-        <li>投資<strong>第三代半導體</strong>（碳化矽 SiC、氮化鎵 GaN）切入電動車、太陽能板市場</li>
-        <li>利用中國法律反制他國侵權指控</li>
-        <li>最終目標：取代美國控制的供應鏈（非加入）</li>
-      </ul>
-      <div class="callout" style="margin-top:8px">先進製程受阻 → 轉往下一代材料卡位</div>
+  <div class="card" style="grid-column:1/-1">
+    <div class="grid">
+      <div class="card inner-card">
+        <div class="card-title">美國策略</div>
+        <ul>
+          <li>EDA、機台、材料全面出口管制</li>
+          <li>零信任技術：驗證晶片是否遭惡意修改</li>
+          <li>川普貿易戰：混淆成貿易問題，<strong>實質是國安問題</strong></li>
+        </ul>
+      </div>
+      <div class="card inner-card">
+        <div class="card-title">中國策略</div>
+        <ul>
+          <li>以廣大市場打造自有技術</li>
+          <li>投資<strong>第三代半導體</strong>（碳化矽 SiC、氮化鎵 GaN）切入電動車、太陽能板市場</li>
+          <li>利用中國法律反制他國侵權指控</li>
+          <li>最終目標：取代美國控制的供應鏈（非加入）</li>
+        </ul>
+        <div class="callout">先進製程受阻 → 轉往下一代材料卡位</div>
+      </div>
     </div>
   </div>
 
   <!-- 美國鎖喉點 -->
-  <div class="card" style="margin-bottom:14px">
+  <div class="card" style="grid-column:1/-1">
     <div class="card-title">美國鎖喉點</div>
-    <p style="color:var(--text);font-size:13px;line-height:1.6;margin-bottom:12px">美國在半導體供應鏈握有多個關鍵節點，形成「武器化的互賴關係」—中國依賴這些節點，美國也依賴中國市場。</p>
-    
+    <ul>
+      <li>美國在半導體供應鏈握有多個關鍵節點，形成「武器化的互賴關係」—中國依賴這些節點，美國也依賴中國市場。</li>
+    </ul>
     <!-- 材料 + EDA + EUV 同一列 -->
     <div class="grid" style="margin:0; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
 
       <!-- EDA -->
-      <div class="card" style="background:var(--bg)">
+      <div class="card inner-card">
         <div class="card-title">EDA — 美國主導</div>
         <ul>
           <li><strong>美國掌握晶片設計能力 62%</strong></li>
@@ -461,11 +468,11 @@
       </div>
 
       <!-- 半導體材料 -->
-      <div class="card" style="background:var(--bg)">
+      <div class="inner-card">
         <div class="card-title">半導體材料 — 日本供應全球過半</div>
-        <ul style="font-size:12px;padding-left:14px">
+        <ul>
           <li><strong>日本佔據 50% 以上</strong> 全球材料市場
-            <ul style="padding-left:14px;margin-top:3px">
+            <ul>
               <li><strong>光阻劑</strong>：日本市佔高達 90%</li>
               <li><strong>矽晶圓</strong>：信越、SUMCO 兩家市佔過半</li>
             </ul>
@@ -495,9 +502,9 @@
       </div>
 
       <!-- 製造機台 (EUV) -->
-      <div class="card" style="background:var(--bg)">
+      <div class="inner-card">
         <div class="card-title">製造機台 (EUV) — 先進製程必需</div>
-        <ul style="font-size:12px;padding-left:14px">
+        <ul>
           <li><strong>ASML 唯一供應</strong></li>
           <li>荷蘭受美壓力管制出口</li>
         </ul>
@@ -505,7 +512,7 @@
     </div>
 
     <!-- 美日荷三方出口管制同盟 -->
-    <div class="callout" style="margin-top:12px">
+    <div class="callout">
       <strong>美日荷三方出口管制同盟</strong>：2023 年 1 月，美日荷三方協議，分工封鎖中國先進晶片製造能力
       <div style="margin-top:8px">
         <a href="https://www.csis.org/analysis/clues-us-dutch-japanese-semiconductor-export-controls-deal-are-hiding-plain-sight" target="_blank" rel="noopener" style="font-size:11px;color:var(--text);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">↗ Clues to the US-Dutch-Japanese deal — CSIS</a>
@@ -516,7 +523,7 @@
   </div>
 
   <!-- AI 三要素：為何運算力是核心 -->
-  <div class="card" style="margin-top:14px">
+  <div class="card" style="grid-column:1/-1">
     <div class="card-title">為什麼晶片決定勝負</div>
     <ul>
       <li>駕馭 AI 需要三要素：<strong>資料</strong>、<strong>演算法</strong>、<strong style="color:var(--highlight)">運算力</strong></li>
@@ -525,7 +532,7 @@
     </ul>
     <div class="callout">美國目前遙遙領先；中國已在成熟製程大幅進展</div>
   </div>
-  <div class="callout" style="margin-top:12px">
+  <div class="callout" style="grid-column:1/-1">
     <div>中美矛盾：中國既是美國半導體產業的主要客戶，又是主要地緣政治敵人。
     更根本的問題是：美國技術是否仍保持領先？</div>
     <a href="https://www.businesstoday.com.tw/article/category/183015/post/202301100021/"
@@ -535,6 +542,7 @@
        onmouseout="this.style.color='var(--text)'">↗ 中國如何利用法律反制他國侵權指控 — 今周刊</a>
   </div>
 
+  </div><!-- /grid -->
 </div></section>
 
 <!-- ⑦ COMPANIES -->

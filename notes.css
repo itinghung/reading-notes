@@ -9,9 +9,9 @@
   --text:         #5fa8d3;
   --text-dim:     #4e86aa;
   --accent:       #62b6cb;
-  --highlight:         #bee9e8;
-  --warning:        #f8c46a;
-  --danger:         #f08080;
+  --highlight:    #bee9e8;
+  --warning:      #f8c46a;
+  --danger:       #f08080;
 }
 
 /* ── RESET ── */
@@ -78,7 +78,7 @@ section { padding: 36px 28px; border-bottom: 1px solid var(--border); }
 .si { max-width: 1100px; margin: 0 auto; }
 section:target { scroll-margin-top: 54px; }
 h2 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 18px; display: flex; align-items: center; gap: 10px; letter-spacing: -.01em; }
-h2 .tag { font-size: 10px; font-weight: 500; background: var(--bg); color: var(--text); padding: 2px 8px; border-radius: 4px; }
+h2 .tag { font-size: 10px; font-weight: 500; background: var(--card); color: var(--text); padding: 2px 8px; border-radius: 4px; }
 h3 { font-size: 13px; font-weight: 600; color: var(--text); margin: 16px 0 8px; }
 p { color: var(--text); }
 
@@ -111,7 +111,7 @@ a.card-link:hover .card { border-color: var(--accent); box-shadow: 0 0 0 1px #62
 
 /* ── CALLOUT ── */
 .callout { border-radius: 8px; padding: 9px 13px; margin: 9px 0; font-size: 13px; background: var(--bg); border: 1px solid var(--border); color: var(--highlight); }
-.card .callout, .compare-col .callout { margin-top: 8px; margin-bottom: 0; }
+.card .callout { margin-top: 8px; margin-bottom: 0; }
 
 /* ── INSIGHT ── */
 .insight { padding: 16px 20px; margin-bottom: 16px; text-align: center; }
@@ -123,15 +123,6 @@ a.card-link:hover .card { border-color: var(--accent); box-shadow: 0 0 0 1px #62
 /* ── ANNOTATION ── */
 .annotation { color: var(--warning); font-style: normal; }
 .annotation::before { content: "📌 "; font-style: normal; font-weight: 600; }
-
-/* ── COMPARE ── */
-.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.compare-col { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
-.compare-col h4 { font-size: 12px; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
-.compare-col ul { padding-left: 14px; color: var(--text); }
-.compare-col ul li { font-size: 12px; margin-bottom: 5px; }
-.compare-col ul li strong { color: var(--text-bright); }
-@media (max-width: 600px) { .compare { grid-template-columns: 1fr; } }
 
 /* ── TABLE ── */
 table { width: 100%; border-collapse: collapse; font-size: 13px; }
