@@ -163,9 +163,9 @@
   <h2>各國發展</h2>
   <p style="color:var(--text-dim);font-size:12px;margin-bottom:12px">點擊地圖上的圓形標記，查看各國半導體發展詳情 →</p>
 
-  <div style="display: flex; flex-direction: column; gap: 24px;">
+  <div class="grid">
     <!-- WORLD MAP SVG -->
-    <div style="position: relative;">
+    <div style="position: relative; grid-column:1/-1">
       <div id="map-container" style="width: 100%; min-height: 200px; display: flex; justify-content: center; align-items: center;">
         <span style="color: var(--text-dim);">Loading Map...</span>
       </div>
@@ -177,11 +177,65 @@
     </div>
 
     <!-- INFO PANEL -->
-    <div class="card" id="info-panel" style="margin-top:0;display:block;padding:20px 22px;">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
-        <div id="info-title" style="font-size:16px;font-weight:700;display:flex;align-items:center;gap:10px;"></div>
+    <div class="card" id="info-panel" style="grid-column:1/-1">
+      <div id="info-title" class="card-title"></div>
+      <div class="grid" id="info-body"></div>
+    </div>
+
+    <!-- COUNTRY TABLE -->
+    <div class="card" style="grid-column:1/-1">
+      <div class="table-scroll">
+      <table>
+        <tr>
+          <th scope="col">國家</th>
+          <th scope="col">優勢來源</th>
+          <th scope="col">關鍵弱點</th>
+          <th scope="col">當前地位</th>
+        </tr>
+        <tr>
+          <th scope="row">🇺🇸 美國</th>
+          <td>EDA、IP 架構、生態系</td>
+          <td>製造外移</td>
+          <td>設計 + 生態系霸主</td>
+        </tr>
+        <tr>
+          <th scope="row">🇹🇼 台灣</th>
+          <td>TSMC 先進製程</td>
+          <td>地緣政治風險</td>
+          <td>先進製造領導地位</td>
+        </tr>
+        <tr>
+          <th scope="row">🇳🇱 荷蘭</th>
+          <td>ASML EUV 整合</td>
+          <td>依賴盟友政治</td>
+          <td>EUV 機台唯一供應</td>
+        </tr>
+        <tr>
+          <th scope="row">🇰🇷 韓國</th>
+          <td>DRAM、NAND 量產</td>
+          <td>設計軟體依賴美</td>
+          <td>記憶體霸主</td>
+        </tr>
+        <tr>
+          <th scope="row">🇯🇵 日本</th>
+          <td>半導體材料、零件</td>
+          <td>整體產業已衰退</td>
+          <td>材料供應關鍵角色</td>
+        </tr>
+        <tr>
+          <th scope="row">🇨🇳 中國</th>
+          <td>廣大市場、成熟製程</td>
+          <td>先進製程、EDA、EUV 受阻</td>
+          <td>成熟製程突破，先進追趕中</td>
+        </tr>
+        <tr>
+          <th scope="row">🇷🇺 俄羅斯</th>
+          <td>(幾乎無)</td>
+          <td>嚴重依賴外國半導體</td>
+          <td>受制裁，軍事電子大幅受限</td>
+        </tr>
+      </table>
       </div>
-      <div class="grid" id="info-body" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;"></div>
     </div>
   </div>
 
@@ -310,16 +364,6 @@
       });
   </script>
 
-  <table style="margin-top:20px">
-    <tr><th>國家</th><th>優勢來源</th><th>關鍵弱點</th><th>當前地位</th></tr>
-    <tr><td><strong>🇺🇸 美國</strong></td><td>EDA、IP 架構、生態系</td><td>製造外移</td><td>設計 + 生態系霸主</td></tr>
-    <tr><td><strong>🇹🇼 台灣</strong></td><td>TSMC 先進製程</td><td>地緣政治風險</td><td>先進製造領導地位</td></tr>
-    <tr><td><strong>🇳🇱 荷蘭</strong></td><td>ASML EUV 整合</td><td>依賴盟友政治</td><td>EUV 機台唯一供應</td></tr>
-    <tr><td><strong>🇰🇷 韓國</strong></td><td>DRAM、NAND 量產</td><td>設計軟體依賴美</td><td>記憶體霸主</td></tr>
-    <tr><td><strong>🇯🇵 日本</strong></td><td>半導體材料、零件</td><td>整體產業已衰退</td><td>材料供應關鍵角色</td></tr>
-    <tr><td><strong>🇨🇳 中國</strong></td><td>廣大市場、成熟製程</td><td>先進製程、EDA、EUV 受阻</td><td>成熟製程突破，先進追趕中</td></tr>
-    <tr><td><strong>🇷🇺 俄羅斯</strong></td><td>(幾乎無)</td><td>嚴重依賴外國半導體</td><td>受制裁，軍事電子大幅受限</td></tr>
-  </table>
 </div></section>
 
 <!-- ④ ASIA BACKGROUND -->

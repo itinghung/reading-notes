@@ -130,7 +130,7 @@ table { width: 100%; border-collapse: collapse; font-size: 13px; }
 th { background: var(--card); color: var(--text); font-weight: 600; padding: 9px 13px; text-align: left; border-bottom: 1px solid var(--border); }
 th[scope="col"] { color: var(--text-bright); letter-spacing: .04em; text-transform: uppercase; }
 th[scope="row"] { color: var(--text-bright); white-space: nowrap; }
-td { padding: 9px 13px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: top; }
+td { background: var(--card); color: var(--text); padding: 9px 13px; border-bottom: 1px solid var(--border); vertical-align: top; }
 td strong { color: var(--text-bright); }
 
 /* ── SVG WRAP ── */
