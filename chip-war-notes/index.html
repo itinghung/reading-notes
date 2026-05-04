@@ -445,149 +445,146 @@
 
   <div class="grid">
 
-  <!-- 中美策略對比 -->
-  <div class="card" style="grid-column:1/-1">
-    <div class="grid">
-      <div class="card inner-card">
-        <div class="card-title">美國策略</div>
-        <ul>
-          <li>EDA、機台、材料全面出口管制</li>
-          <li>零信任技術：驗證晶片是否遭惡意修改</li>
-          <li>川普貿易戰：混淆成貿易問題，<strong>實質是國安問題</strong></li>
-        </ul>
-      </div>
-      <div class="card inner-card">
-        <div class="card-title">中國策略</div>
-        <ul>
-          <li>以廣大市場打造自有技術</li>
-          <li>投資<strong>第三代半導體</strong>（碳化矽 SiC、氮化鎵 GaN）切入電動車、太陽能板市場</li>
-          <li>利用中國法律反制他國侵權指控</li>
-          <li>最終目標：取代美國控制的供應鏈（非加入）</li>
-        </ul>
-        <div class="callout">先進製程受阻 → 轉往下一代材料卡位</div>
+    <!-- 中美策略對比 -->
+    <div class="card" style="grid-column:1/-1">
+      <div class="grid">
+        <div class="card inner-card">
+          <div class="card-title">美國策略</div>
+          <ul>
+            <li>EDA、機台、材料全面出口管制</li>
+            <li>零信任技術：驗證晶片是否遭惡意修改</li>
+            <li>川普貿易戰：混淆成貿易問題，<strong>實質是國安問題</strong></li>
+          </ul>
+        </div>
+        <div class="card inner-card">
+          <div class="card-title">中國策略</div>
+          <ul>
+            <li>以廣大市場打造自有技術</li>
+            <li>投資<strong>第三代半導體</strong>（碳化矽 SiC、氮化鎵 GaN）切入電動車、太陽能板市場</li>
+            <li>利用中國法律反制他國侵權指控</li>
+            <li>最終目標：取代美國控制的供應鏈（非加入）</li>
+          </ul>
+          <div class="callout">先進製程受阻 → 轉往下一代材料卡位</div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- 美國鎖喉點 -->
-  <div class="card" style="grid-column:1/-1">
-    <div class="card-title">美國鎖喉點</div>
-    <ul>
-      <li>美國在半導體供應鏈握有多個關鍵節點，形成「武器化的互賴關係」—中國依賴這些節點，美國也依賴中國市場。</li>
-    </ul>
-    <!-- 材料 + EDA + EUV 同一列 -->
-    <div class="grid" style="margin:0; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
+    <!-- 美國鎖喉點 -->
+    <div class="card" style="grid-column:1/-1">
+      <div class="card-title">美國鎖喉點</div>
+      <ul>
+        <li>美國在半導體供應鏈握有多個關鍵節點，形成「武器化的互賴關係」—中國依賴這些節點，美國也依賴中國市場。</li>
+      </ul>
+      <div class="grid">
+        <!-- EDA -->
+        <div class="card inner-card">
+          <div class="card-title">EDA — 美國主導</div>
+          <ul>
+            <li><strong>美國掌握晶片設計能力 62%</strong></li>
+            <li>三大功能：模擬、設計、驗證，由 DARPA 與 SRC 資助孕育</li>
+          </ul>
+          <div class="donut-wrap">
+            <div class="donut" style="background: conic-gradient(var(--eda-synopsys) 0% 32%, var(--eda-cadence) 32% 62%, var(--eda-siemens) 62% 75%, var(--text-dim) 75% 100%);"></div>
+            <div class="donut-legend">
+              <div class="legend-row">
+                <span class="legend-label"><span class="legend-dot" style="background: var(--eda-synopsys);"></span>🇺🇸 Synopsys</span>
+                <strong style="color: var(--text-bright);">32%</strong>
+              </div>
+              <div class="legend-row">
+                <span class="legend-label"><span class="legend-dot" style="background: var(--eda-cadence);"></span>🇺🇸 Cadence</span>
+                <strong style="color: var(--text-bright);">30%</strong>
+              </div>
+              <div class="legend-row">
+                <span class="legend-label"><span class="legend-dot" style="background: var(--eda-siemens);"></span>🇩🇪 Siemens</span>
+                <strong style="color: var(--text-bright);">13%</strong>
+              </div>
+              <div class="legend-row">
+                <span class="legend-label dim"><span class="legend-dot" style="background: var(--text-dim);"></span>其他</span>
+                <span style="color: var(--text-dim);">25%</span>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:10px;display:flex;flex-direction:column;gap:4px">
+            <a href="https://www.synopsys.com/glossary/what-is-electronic-design-automation.html" target="_blank" rel="noopener" style="font-size:11px;color:var(--text);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">↗ What is EDA — Synopsys</a>
+            <a href="https://tw.news.yahoo.com/news/eda-%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E7%82%BA%E4%BD%95%E7%BE%8E%E5%9C%8B%E8%83%BD%E9%9D%A0%E5%AE%83%E4%BE%86%E9%99%90%E5%88%B6%E4%B8%AD%E5%9C%8B%E7%9A%84%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%99%BC%E5%B1%95%EF%BC%9F-074814513.html" target="_blank" rel="noopener" style="font-size:11px;color:var(--text);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">↗ EDA 是什麼？為何美國能靠它限制中國半導體發展？</a>
+          </div>
+        </div>
 
-      <!-- EDA -->
-      <div class="card inner-card">
-        <div class="card-title">EDA — 美國主導</div>
-        <ul>
-          <li><strong>美國掌握晶片設計能力 62%</strong></li>
-          <li>三大功能：模擬、設計、驗證，由 DARPA 與 SRC 資助孕育</li>
-        </ul>
-        <div style="display: flex; gap: 18px; align-items: center; margin-bottom: 12px;">
-          <div style="width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(var(--accent) 0% 32%, #6ee7b7 32% 62%, var(--warning) 62% 75%, var(--text-dim) 75% 100%); flex-shrink: 0; border: 1px solid var(--border);"></div>
-          <div style="display: flex; flex-direction: column; gap: 5px; flex-grow: 1; min-width: 0;">
-            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--accent);"></span>🇺🇸 Synopsys</span>
-              <strong style="color: var(--text-bright);">32%</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #6ee7b7;"></span>🇺🇸 Cadence</span>
-              <strong style="color: var(--text-bright);">30%</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--warning);"></span>🇩🇪 Siemens</span>
-              <strong style="color: var(--text-bright);">13%</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text-dim);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--text-dim);"></span>其他</span>
-              <span style="color: var(--text-dim);">25%</span>
+        <!-- 半導體材料 -->
+        <div class="inner-card">
+          <div class="card-title">半導體材料 — 日本供應全球過半</div>
+          <ul>
+            <li><strong>日本佔據 50% 以上</strong> 全球材料市場
+              <ul>
+                <li><strong>光阻劑</strong>：日本市佔高達 90%</li>
+                <li><strong>矽晶圓</strong>：信越、SUMCO 兩家市佔過半</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="donut-wrap">
+            <div class="donut" style="background: conic-gradient(var(--country-japan) 0% 52%, var(--country-taiwan) 52% 67%, var(--country-korea) 67% 82%, var(--country-china) 82% 92%, var(--text-dim) 92% 100%);"></div>
+            <div class="donut-legend">
+              <div class="legend-row">
+                <span class="legend-label"><span class="legend-dot" style="background: var(--country-japan);"></span>🇯🇵 日本</span>
+                <strong style="color: var(--text-bright);">52%</strong>
+              </div>
+              <div class="legend-row">
+                <span class="legend-label"><span class="legend-dot" style="background: var(--country-taiwan);"></span>🇹🇼 台灣</span>
+                <strong style="color: var(--text-bright);">15%</strong>
+              </div>
+              <div class="legend-row">
+                <span class="legend-label"><span class="legend-dot" style="background: var(--country-korea);"></span>🇰🇷 韓國</span>
+                <strong style="color: var(--text-bright);">15%</strong>
+              </div>
+              <div class="legend-row">
+                <span class="legend-label dim"><span class="legend-dot" style="background: var(--country-china);"></span>🇨🇳 中國</span>
+                <span style="color: var(--text-dim);">10%</span>
+              </div>
             </div>
           </div>
         </div>
-        <div style="margin-top:10px;display:flex;flex-direction:column;gap:4px">
-          <a href="https://www.synopsys.com/glossary/what-is-electronic-design-automation.html" target="_blank" rel="noopener" style="font-size:11px;color:var(--text);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">↗ What is EDA — Synopsys</a>
-          <a href="https://tw.news.yahoo.com/news/eda-%E6%98%AF%E4%BB%80%E9%BA%BC%EF%BC%9F%E7%82%BA%E4%BD%95%E7%BE%8E%E5%9C%8B%E8%83%BD%E9%9D%A0%E5%AE%83%E4%BE%86%E9%99%90%E5%88%B6%E4%B8%AD%E5%9C%8B%E7%9A%84%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%99%BC%E5%B1%95%EF%BC%9F-074814513.html" target="_blank" rel="noopener" style="font-size:11px;color:var(--text);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">↗ EDA 是什麼？為何美國能靠它限制中國半導體發展？</a>
+
+        <!-- 製造機台 (EUV) -->
+        <div class="inner-card">
+          <div class="card-title">製造機台 (EUV) — 先進製程必需</div>
+          <ul>
+            <li><strong>ASML 唯一供應</strong></li>
+            <li>荷蘭受美壓力管制出口</li>
+          </ul>
         </div>
       </div>
 
-      <!-- 半導體材料 -->
-      <div class="inner-card">
-        <div class="card-title">半導體材料 — 日本供應全球過半</div>
-        <ul>
-          <li><strong>日本佔據 50% 以上</strong> 全球材料市場
-            <ul>
-              <li><strong>光阻劑</strong>：日本市佔高達 90%</li>
-              <li><strong>矽晶圓</strong>：信越、SUMCO 兩家市佔過半</li>
-            </ul>
-          </li>
-        </ul>
-        <div style="display: flex; gap: 18px; align-items: center; margin: 12px 0;">
-          <div style="width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(var(--country-japan) 0% 52%, var(--country-taiwan) 52% 67%, var(--country-korea) 67% 82%, var(--country-china) 82% 92%, var(--text-dim) 92% 100%); flex-shrink: 0; border: 1px solid var(--border);"></div>
-          <div style="display: flex; flex-direction: column; gap: 5px; flex-grow: 1; min-width: 0;">
-            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--country-japan);"></span>🇯🇵 日本</span>
-              <strong style="color: var(--text-bright);">52%</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--country-taiwan);"></span>🇹🇼 台灣</span>
-              <strong style="color: var(--text-bright);">15%</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--country-korea);"></span>🇰🇷 韓國</span>
-              <strong style="color: var(--text-bright);">15%</strong>
-            </div>
-            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text-dim);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--country-china);"></span>🇨🇳 中國</span>
-              <span style="color: var(--text-dim);">10%</span>
-            </div>
-          </div>
+      <!-- 美日荷三方出口管制同盟 -->
+      <div class="callout">
+        <strong>美日荷三方出口管制同盟</strong>：2023 年 1 月，美日荷三方協議，分工封鎖中國先進晶片製造能力
+        <div style="margin-top:8px">
+          <a href="https://www.csis.org/analysis/clues-us-dutch-japanese-semiconductor-export-controls-deal-are-hiding-plain-sight" target="_blank" rel="noopener" style="font-size:11px;color:var(--text);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">↗ Clues to the US-Dutch-Japanese deal — CSIS</a>
         </div>
       </div>
 
-      <!-- 製造機台 (EUV) -->
-      <div class="inner-card">
-        <div class="card-title">製造機台 (EUV) — 先進製程必需</div>
-        <ul>
-          <li><strong>ASML 唯一供應</strong></li>
-          <li>荷蘭受美壓力管制出口</li>
-        </ul>
-      </div>
+      <div class="callout"><span class="annotation">半導體業的集中趨勢也造就鎖喉點的存在</span></div>
     </div>
 
-    <!-- 美日荷三方出口管制同盟 -->
-    <div class="callout">
-      <strong>美日荷三方出口管制同盟</strong>：2023 年 1 月，美日荷三方協議，分工封鎖中國先進晶片製造能力
-      <div style="margin-top:8px">
-        <a href="https://www.csis.org/analysis/clues-us-dutch-japanese-semiconductor-export-controls-deal-are-hiding-plain-sight" target="_blank" rel="noopener" style="font-size:11px;color:var(--text);text-decoration:none" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text)'">↗ Clues to the US-Dutch-Japanese deal — CSIS</a>
-      </div>
+    <!-- AI 三要素：為何運算力是核心 -->
+    <div class="card" style="grid-column:1/-1">
+      <div class="card-title">為什麼晶片決定勝負</div>
+      <ul>
+        <li>駕馭 AI 需要三要素：<strong>資料</strong>、<strong>演算法</strong>、<strong style="color:var(--highlight)">運算力</strong></li>
+        <li>中美在資料與演算法上皆無明顯優勢，關鍵差距在運算力</li>
+        <li>運算力取決於晶片 → 晶片戰核心</li>
+      </ul>
+      <div class="callout">美國目前遙遙領先；中國已在成熟製程大幅進展</div>
     </div>
-
-    <div class="callout"><span class="annotation">半導體業的集中趨勢也造就鎖喉點的存在</span></div>
+    <div class="callout" style="grid-column:1/-1">
+      <div>中美矛盾：中國既是美國半導體產業的主要客戶，又是主要地緣政治敵人。
+      更根本的問題是：美國技術是否仍保持領先？</div>
+      <a href="https://www.businesstoday.com.tw/article/category/183015/post/202301100021/"
+         target="_blank" rel="noopener"
+         style="font-size:11px;color:var(--text);text-decoration:none;display:inline-block;margin-top:8px"
+         onmouseover="this.style.color='var(--accent)'"
+         onmouseout="this.style.color='var(--text)'">↗ 中國如何利用法律反制他國侵權指控 — 今周刊</a>
+    </div>
   </div>
-
-  <!-- AI 三要素：為何運算力是核心 -->
-  <div class="card" style="grid-column:1/-1">
-    <div class="card-title">為什麼晶片決定勝負</div>
-    <ul>
-      <li>駕馭 AI 需要三要素：<strong>資料</strong>、<strong>演算法</strong>、<strong style="color:var(--highlight)">運算力</strong></li>
-      <li>中美在資料與演算法上皆無明顯優勢，關鍵差距在運算力</li>
-      <li>運算力取決於晶片 → 晶片戰核心</li>
-    </ul>
-    <div class="callout">美國目前遙遙領先；中國已在成熟製程大幅進展</div>
-  </div>
-  <div class="callout" style="grid-column:1/-1">
-    <div>中美矛盾：中國既是美國半導體產業的主要客戶，又是主要地緣政治敵人。
-    更根本的問題是：美國技術是否仍保持領先？</div>
-    <a href="https://www.businesstoday.com.tw/article/category/183015/post/202301100021/"
-       target="_blank" rel="noopener"
-       style="font-size:11px;color:var(--text);text-decoration:none;display:inline-block;margin-top:8px"
-       onmouseover="this.style.color='var(--accent)'"
-       onmouseout="this.style.color='var(--text)'">↗ 中國如何利用法律反制他國侵權指控 — 今周刊</a>
-  </div>
-
-  </div><!-- /grid -->
 </div></section>
 
 <!-- ⑦ COMPANIES -->
