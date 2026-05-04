@@ -524,22 +524,22 @@
           </li>
         </ul>
         <div style="display: flex; gap: 18px; align-items: center; margin: 12px 0;">
-          <div style="width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(#fb923c 0% 52%, #f8c46a 52% 67%, #2dd4bf 67% 82%, #f08080 82% 92%, var(--text-dim) 92% 100%); flex-shrink: 0; border: 1px solid var(--border);"></div>
+          <div style="width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(var(--country-japan) 0% 52%, var(--country-taiwan) 52% 67%, var(--country-korea) 67% 82%, var(--country-china) 82% 92%, var(--text-dim) 92% 100%); flex-shrink: 0; border: 1px solid var(--border);"></div>
           <div style="display: flex; flex-direction: column; gap: 5px; flex-grow: 1; min-width: 0;">
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #fb923c;"></span>🇯🇵 日本</span>
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--country-japan);"></span>🇯🇵 日本</span>
               <strong style="color: var(--text-bright);">52%</strong>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #f8c46a;"></span>🇹🇼 台灣</span>
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--country-taiwan);"></span>🇹🇼 台灣</span>
               <strong style="color: var(--text-bright);">15%</strong>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #2dd4bf;"></span>🇰🇷 韓國</span>
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--text);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--country-korea);"></span>🇰🇷 韓國</span>
               <strong style="color: var(--text-bright);">15%</strong>
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;">
-              <span style="display: flex; align-items: center; gap: 5px; color: var(--text-dim);"><span style="width: 7px; height: 7px; border-radius: 50%; background: #f08080;"></span>🇨🇳 中國</span>
+              <span style="display: flex; align-items: center; gap: 5px; color: var(--text-dim);"><span style="width: 7px; height: 7px; border-radius: 50%; background: var(--country-china);"></span>🇨🇳 中國</span>
               <span style="color: var(--text-dim);">10%</span>
             </div>
           </div>
@@ -691,7 +691,7 @@ navLinks.forEach(a => { a.addEventListener('click', e => { const href = a.getAtt
 /* COUNTRY DATA */
 const data = {
   usa: {
-    title: '🇺🇸 美國 — 先發優勢', color: '#5fa8d3',
+    title: '🇺🇸 美國 — 先發優勢', color: 'var(--country-usa)',
     note: '扶植日韓的政治策略，反而成為自身競爭壓力。但美國仍牢牢掌控供應鏈的最上游與最關鍵節點。',
     blocks: [
       { h:'關鍵優勢', l:['DARPA 資助孕育 EDA 三巨頭、Qualcomm','Fairchild: 降價策略搶民用市場','避免軍方單一客戶掌握命脈','擁有完整設計→IP→工具鏈生態系'] },
@@ -701,7 +701,7 @@ const data = {
     ],
   },
   japan: {
-    title: '🇯🇵 日本 — 盛極而衰', color: '#fb923c',
+    title: '🇯🇵 日本 — 盛極而衰', color: 'var(--country-japan)',
     note: '成功為失敗之母 — DRAM 的成功，阻礙了對下一波趨勢的洞察',
     blocks: [
       { h:'崛起原因', l:['受美國戰後策略授權，消費電子崛起','廉價銀行貸款 + 政府支持 → 可長期虧損','DRAM 最終超越美國'] },
@@ -714,7 +714,7 @@ const data = {
     ],
   },
   korea: {
-    title: '🇰🇷 韓國 — 第三方獲益', color: '#2dd4bf',
+    title: '🇰🇷 韓國 — 第三方獲益', color: 'var(--country-korea)',
     note: '策略性時機入場：在大多數競爭者破產退出時切入市場，是收購大宗商品企業的最佳時機。',
     blocks: [
       { h:'崛起策略', l:['美國為抗衡日本，在亞洲尋更便宜供應','廉價銀行貸款 + 政府支持大型財團','日本泡沫破裂後乘勢取代 DRAM 份額','利用美日角力空隙切入'] },
@@ -723,7 +723,7 @@ const data = {
     ],
   },
   china: {
-    title: '🇨🇳 中國 — 後發追趕', color: '#f08080',
+    title: '🇨🇳 中國 — 後發追趕', color: 'var(--country-china)',
     note: '中美矛盾：中國既是美國半導體產業的主要客戶，又是主要地緣政治敵人。這種「武器化的互賴關係」是雙方最大的結構性張力。',
     blocks: [
       { h:'目標與策略', l:['最終目標：<strong>取代</strong>美國控制的供應鏈（非加入）','以廣大市場換取技術授權','政府大量補貼成熟製程，已大幅進展'] },
@@ -733,7 +733,7 @@ const data = {
     ],
   },
   russia: {
-    title: '🇷🇺 俄羅斯 (蘇聯) — 系統性失敗', color: '#94a3b8',
+    title: '🇷🇺 俄羅斯 (蘇聯) — 系統性失敗', color: 'var(--country-russia)',
     note: '俄羅斯對外國半導體的依賴，使美國及盟友在制裁上握有強大籌碼 → 缺乏自主供應鏈，在地緣政治衝突中極為脆弱。',
     blocks: [
       { h:'蘇聯失敗根源', l:['職涯誘因：追求官僚晉升 > 設計新產品','抄襲心態：創新路徑由美國設定','過度依賴軍事客戶，未利用民用市場','缺乏國際供應鏈，無法分攤研發成本'] },
@@ -742,7 +742,7 @@ const data = {
     ],
   },
   netherlands: {
-    title: '🇳🇱 荷蘭 (ASML) — 供應鏈護城河', color: '#a78bfa',
+    title: '🇳🇱 荷蘭 (ASML) — 供應鏈護城河', color: 'var(--country-netherlands)',
     note: 'ASML 的強大在於整合，而非製造。',
     blocks: [
       { h:'ASML 護城河', link:'#companies', l:['本身僅生產 EUV 機台 15% 元件','其餘採購全球最精密產品整合','護城河是<strong>供應鏈管理能力</strong>，非個別元件製造','全球唯一 EUV 光刻機供應商'] },
@@ -751,7 +751,7 @@ const data = {
     ],
   },
   taiwan: {
-    title: '🇹🇼 台灣 (TSMC) — 代工典範', color: '#f8c46a',
+    title: '🇹🇼 台灣 (TSMC) — 代工典範', color: 'var(--country-taiwan)',
     note: '「不競爭」的定位，使 TSMC 成為所有人都願意合作的平台 → 台灣在地緣政治夾縫中找到的最佳定位。',
     blocks: [
       { h:'TSMC 護城河', link:'#companies', l:['代工模式打敗 Intel 整合模式','不與顧客競爭 → 成為協調者與規範制定者','先進製程技術持續領先'] },

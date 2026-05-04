@@ -1,3 +1,14 @@
+/* ── COUNTRY COLORS ── */
+:root {
+  --country-usa:         #5fa8d3;
+  --country-japan:       #fb923c;
+  --country-korea:       #2dd4bf;
+  --country-china:       #f08080;
+  --country-russia:      #94a3b8;
+  --country-netherlands: #a78bfa;
+  --country-taiwan:      #f8c46a;
+}
+
 /* ── WORLD MAP ── */
 #map-container { border-radius: 10px; border: 1px solid var(--border); background: var(--bg); overflow: hidden; }
 #world-map { width: 100%; height: auto; display: block; border-radius: 0 !important; border: none !important; background: var(--bg); cursor: grab; user-select: none; touch-action: none; }

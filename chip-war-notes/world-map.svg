@@ -2682,46 +2682,46 @@
     </g>
     <g class="markers">
       <g class="map-marker" data-c="usa" onclick="typeof showCountry === 'function' ? showCountry('usa') : null" id="m-usa">
-        <line x1="782.5" y1="156.3841700721695" x2="807.5" y2="121.3841700721695" stroke="#5fa8d3" class="label-line"/>
-        <circle cx="782.5" cy="156.3841700721695" r="18" fill="#5fa8d3" class="pulse"/>
-        <circle cx="782.5" cy="156.3841700721695" r="6" fill="#5fa8d3" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
-        <text x="812.5" y="125.3841700721695" fill="#5fa8d3" font-size="12" text-anchor="start" font-weight="600">🇺🇸 美國</text>
+        <line x1="782.5" y1="156.3841700721695" x2="807.5" y2="121.3841700721695" style=\"stroke:var(--country-usa)\" class="label-line"/>
+        <circle cx="782.5" cy="156.3841700721695" r="18" style="fill:var(--country-usa)" class="pulse"/>
+        <circle cx="782.5" cy="156.3841700721695" r="6" style="fill:var(--country-usa)" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
+        <text x="812.5" y="125.3841700721695" style="fill:var(--country-usa)" font-size="12" text-anchor="start" font-weight="600">🇺🇸 美國</text>
       </g>
       <g class="map-marker" data-c="russia" onclick="typeof showCountry === 'function' ? showCountry('russia') : null" id="m-russia">
-        <line x1="167.5" y1="113.8841700721695" x2="167.5" y2="78.8841700721695" stroke="#94a3b8" class="label-line"/>
-        <circle cx="167.5" cy="113.8841700721695" r="18" fill="#94a3b8" class="pulse"/>
-        <circle cx="167.5" cy="113.8841700721695" r="6" fill="#94a3b8" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
-        <text x="167.5" y="72.8841700721695" fill="#94a3b8" font-size="12" text-anchor="middle" font-weight="600">🇷🇺 俄羅斯</text>
+        <line x1="167.5" y1="113.8841700721695" x2="167.5" y2="78.8841700721695" style="stroke:var(--country-russia)" class="label-line"/>
+        <circle cx="167.5" cy="113.8841700721695" r="18" style="fill:var(--country-russia)" class="pulse"/>
+        <circle cx="167.5" cy="113.8841700721695" r="6" style="fill:var(--country-russia)" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
+        <text x="167.5" y="72.8841700721695" style="fill:var(--country-russia)" font-size="12" text-anchor="middle" font-weight="600">🇷🇺 俄羅斯</text>
       </g>
       <g class="map-marker" data-c="netherlands" onclick="typeof showCountry === 'function' ? showCountry('netherlands') : null" id="m-netherlands">
-        <line x1="87.49999999999994" y1="121.3841700721695" x2="62.49999999999994" y2="86.3841700721695" stroke="#a78bfa" class="label-line"/>
-        <circle cx="87.49999999999994" cy="121.3841700721695" r="18" fill="#a78bfa" class="pulse"/>
-        <circle cx="87.49999999999994" cy="121.3841700721695" r="6" fill="#a78bfa" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
-        <text x="57.49999999999994" y="90.3841700721695" fill="#a78bfa" font-size="12" text-anchor="end" font-weight="600">🇳🇱 荷蘭</text>
+        <line x1="87.49999999999994" y1="121.3841700721695" x2="62.49999999999994" y2="86.3841700721695" style="stroke:var(--country-netherlands)" class="label-line"/>
+        <circle cx="87.49999999999994" cy="121.3841700721695" r="18" style="fill:var(--country-netherlands)" class="pulse"/>
+        <circle cx="87.49999999999994" cy="121.3841700721695" r="6" style="fill:var(--country-netherlands)" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
+        <text x="57.49999999999994" y="90.3841700721695" style="fill:var(--country-netherlands)" font-size="12" text-anchor="end" font-weight="600">🇳🇱 荷蘭</text>
       </g>
       <g class="map-marker" data-c="china" onclick="typeof showCountry === 'function' ? showCountry('china') : null" id="m-china">
-        <line x1="365" y1="153.8841700721695" x2="320" y2="118.8841700721695" stroke="#f08080" class="label-line"/>
-        <circle cx="365" cy="153.8841700721695" r="18" fill="#f08080" class="pulse"/>
-        <circle cx="365" cy="153.8841700721695" r="6" fill="#f08080" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
-        <text x="315" y="122.8841700721695" fill="#f08080" font-size="12" text-anchor="end" font-weight="600">🇨🇳 中國</text>
+        <line x1="365" y1="153.8841700721695" x2="320" y2="118.8841700721695" style="stroke:var(--country-china)" class="label-line"/>
+        <circle cx="365" cy="153.8841700721695" r="18" style="fill:var(--country-china)" class="pulse"/>
+        <circle cx="365" cy="153.8841700721695" r="6" style="fill:var(--country-china)" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
+        <text x="315" y="122.8841700721695" style="fill:var(--country-china)" font-size="12" text-anchor="end" font-weight="600">🇨🇳 中國</text>
       </g>
       <g class="map-marker" data-c="japan" onclick="typeof showCountry === 'function' ? showCountry('japan') : null" id="m-japan">
-        <line x1="422.5" y1="163.8841700721695" x2="462.5" y2="128.8841700721695" stroke="#fb923c" class="label-line"/>
-        <circle cx="422.5" cy="163.8841700721695" r="18" fill="#fb923c" class="pulse"/>
-        <circle cx="422.5" cy="163.8841700721695" r="6" fill="#fb923c" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
-        <text x="467.5" y="132.8841700721695" fill="#fb923c" font-size="12" text-anchor="start" font-weight="600">🇯🇵 日本</text>
+        <line x1="422.5" y1="163.8841700721695" x2="462.5" y2="128.8841700721695" style="stroke:var(--country-japan)" class="label-line"/>
+        <circle cx="422.5" cy="163.8841700721695" r="18" style="fill:var(--country-japan)" class="pulse"/>
+        <circle cx="422.5" cy="163.8841700721695" r="6" style="fill:var(--country-japan)" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
+        <text x="467.5" y="132.8841700721695" style="fill:var(--country-japan)" font-size="12" text-anchor="start" font-weight="600">🇯🇵 日本</text>
       </g>
       <g class="map-marker" data-c="korea" onclick="typeof showCountry === 'function' ? showCountry('korea') : null" id="m-korea">
-        <line x1="390" y1="158.8841700721695" x2="395" y2="108.8841700721695" stroke="#2dd4bf" class="label-line"/>
-        <circle cx="390" cy="158.8841700721695" r="18" fill="#2dd4bf" class="pulse"/>
-        <circle cx="390" cy="158.8841700721695" r="6" fill="#2dd4bf" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
-        <text x="395" y="102.8841700721695" fill="#2dd4bf" font-size="12" text-anchor="middle" font-weight="600">🇰🇷 韓國</text>
+        <line x1="390" y1="158.8841700721695" x2="395" y2="108.8841700721695" style="stroke:var(--country-korea)" class="label-line"/>
+        <circle cx="390" cy="158.8841700721695" r="18" style="fill:var(--country-korea)" class="pulse"/>
+        <circle cx="390" cy="158.8841700721695" r="6" style="fill:var(--country-korea)" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
+        <text x="395" y="102.8841700721695" style="fill:var(--country-korea)" font-size="12" text-anchor="middle" font-weight="600">🇰🇷 韓國</text>
       </g>
       <g class="map-marker" data-c="taiwan" onclick="typeof showCountry === 'function' ? showCountry('taiwan') : null" id="m-taiwan">
-        <line x1="406" y1="190" x2="442" y2="224" stroke="#f8c46a" class="label-line"/>
-        <circle cx="406" cy="190" r="22" fill="#f8c46a" class="pulse"/>
-        <circle cx="406" cy="190" r="8" fill="#f8c46a" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
-        <text x="447" y="228" fill="#f8c46a" font-size="12" text-anchor="start" font-weight="600">🇹🇼 台灣</text>
+        <line x1="406" y1="190" x2="442" y2="224" style="stroke:var(--country-taiwan)" class="label-line"/>
+        <circle cx="406" cy="190" r="22" style="fill:var(--country-taiwan)" class="pulse"/>
+        <circle cx="406" cy="190" r="8" style="fill:var(--country-taiwan)" class="dot" stroke="#0a1a28" stroke-width="1.5"/>
+        <text x="447" y="228" style="fill:var(--country-taiwan)" font-size="12" text-anchor="start" font-weight="600">🇹🇼 台灣</text>
       </g>
     </g>
   </svg>
