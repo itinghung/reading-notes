@@ -72,13 +72,10 @@ nav::-webkit-scrollbar { height: 0; }
 nav a { color: var(--text-dim); text-decoration: none; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 500; transition: background .15s, color .15s; white-space: nowrap; flex-shrink: 0; }
 nav a:hover, nav a.active { background: var(--bg); color: var(--text-bright); }
 
-
 /* ── SECTIONS ── */
-section { padding: 36px 28px; border-bottom: 1px solid var(--border); }
+section { padding: 36px 28px; border-bottom: 1px solid var(--border); scroll-margin-top: 64px; }
 .si { max-width: 1100px; margin: 0 auto; }
-section:target { scroll-margin-top: 54px; }
 h2 { font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 18px; display: flex; align-items: center; gap: 10px; letter-spacing: -.01em; }
-h2 .tag { font-size: 10px; font-weight: 500; background: var(--card); color: var(--text); padding: 2px 8px; border-radius: 4px; }
 h3 { font-size: 13px; font-weight: 600; color: var(--text); margin: 16px 0 8px; }
 p { color: var(--text); }
 
@@ -96,9 +93,16 @@ p { color: var(--text); }
 
 /* ── INNER CARD ── */
 .inner-card { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.accent-card { background: var(--bg); border: 1px solid var(--accent); border-radius: 8px; padding: 12px; }
 
-/* ── BADGE ── */
+/* ── BADGE / TAG ── */
 .badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 5px; font-size: 11px; font-weight: 600; flex-shrink: 0; background: var(--bg); color: var(--text-bright); border: 1px solid var(--border); }
+.tag { font-size: 10px; font-weight: 500; background: var(--card); color: var(--text); padding: 2px 8px; border-radius: 4px; }
+
+/* ── LINKS ── */
+.links { margin-top: 10px; display: flex; flex-direction: column; gap: 4px; }
+a.ref-link { color: var(--text); text-decoration: none; }
+a.ref-link:hover { color: var(--accent); }
 
 /* ── CLICKABLE CARD ── */
 a.card-link { display: block; text-decoration: none; color: inherit; }
