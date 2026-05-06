@@ -66,6 +66,10 @@
 .step-title { color: var(--text); font-size: 12px; font-weight: 700; }
 .step-desc { color: var(--text-dim); font-size: 11px; margin-top: 1px; }
 
+/* ── VS DIVIDER ── */
+.grid-vs { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: stretch; }
+.vs-divider { display: flex; align-items: center; padding: 0 4px; font-size: 2rem; font-weight: 800; color: var(--text-dim); }
+
 /* ── ERA CARDS ── */
 .era-label { color: var(--text); font-size: 16px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
 .era-icon { color: var(--text); font-size: 24px; line-height: 1; margin-bottom: 8px; }
