@@ -1,4 +1,4 @@
-<svg width="100%" height="auto" viewBox="0 0 1000 280" style="max-width: 1000px;" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" viewBox="0 0 1000 280" style="max-width: 1000px;" xmlns="http://www.w3.org/2000/svg">
   <defs><linearGradient id="tlg" x1="0%" x2="100%"><stop offset="0%" stop-color="#1d4ed8" stop-opacity=".5"/><stop offset="100%" stop-color="#dc2626" stop-opacity=".7"/></linearGradient></defs>
   <rect x="20" y="136" width="960" height="4" fill="url(#tlg)" rx="2"/>
   
