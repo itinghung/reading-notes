@@ -12,6 +12,9 @@
   --highlight:    #bee9e8;
   --warning:      #f8c46a;
   --danger:       #f08080;
+
+  /* Hanging indent shared by every bulleted list, so contexts stay aligned */
+  --list-indent:  20px;
 }
 
 /* ── RESET ── */
@@ -87,7 +90,7 @@ p { color: var(--text); }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 15px 17px; transition: border-color .2s, box-shadow .2s; }
 .card-title { font-size: 13px; font-weight: 600; margin-bottom: 10px; display: flex; align-items: center; gap: 7px; color: var(--text); }
 .card-title strong { color: var(--text-bright); font-weight: 600; }
-.card ul { padding-left: 14px; color: var(--text); }
+.card ul { padding-left: var(--list-indent); color: var(--text); }
 .card ul li { margin-bottom: 5px; font-size: 13px; }
 .card ul li strong { color: var(--text-bright); font-weight: 600; }
 
